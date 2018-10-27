@@ -13,3 +13,8 @@ Gemfile.lock
 package-lock.json
 yarn.lock
 .idea
+.env
+_config.yml.orig
+s3_website.yml.orig
+vendor/
+_drafts/

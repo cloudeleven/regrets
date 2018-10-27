@@ -74,6 +74,11 @@ exclude:
   - README.md
   - vendor/
   - yarn.lock
+  - .bundle/
+  - .env
+  - s3_website.yml
+  - s3_website.yml.orig
+  - _config.yml.orig
 plugins:
   - jekyll-assets
   - jekyll-paginate
