@@ -89,4 +89,5 @@ permalink: posts/:year/:month/:day/:slug
 
 # Custom settings
 timezone: Asia/Tokyo
+future: true
 
