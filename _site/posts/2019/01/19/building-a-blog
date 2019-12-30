@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>follow me, regrets | Building a blog with Jekyll, Chalk, s3_website and Docker</title>
+  <meta name="description" content="Docker で Jekyll (template は Chalk) と s3_website を動かして build した blog を S3 に hosting して CloudFront で配信する環境を整える手順の記録。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Building a blog with Jekyll, Chalk, s3_website and Docker">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://regrets.cloudeleven.space/posts/2019/01/19/building-a-blog">
+  <meta property="og:description" content="Docker で Jekyll (template は Chalk) と s3_website を動かして build した blog を S3 に hosting して CloudFront で配信する環境を整える手順の記録。">
+  <meta property="og:site_name" content="follow me, regrets">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://regrets.cloudeleven.space/posts/2019/01/19/building-a-blog">
+  <meta name="twitter:title" content="Building a blog with Jekyll, Chalk, s3_website and Docker">
+  <meta name="twitter:description" content="Docker で Jekyll (template は Chalk) と s3_website を動かして build した blog を S3 に hosting して CloudFront で配信する環境を整える手順の記録。">
+
+  
+    <meta property="og:image" content="https://regrets.cloudeleven.space/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="https://regrets.cloudeleven.space/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="https://regrets.cloudeleven.space/feed.xml" type="application/rss+xml" rel="alternate" title="follow me, regrets Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-d8b6c4e8f03e28e8c608d251894a181b4dc76ae167efda475e70336230e984e9.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-185e8a7c1ed7f3a28310c4628cda3f1fab5316eade2941ddcb0f4c8ffd7b87ec.png">
+      <link rel="stylesheet" type="text/css" href="/assets/light-f8e60fad92de680fb88450966b4490601fb371798a8a13c376ef8fe93a947bd8.css" integrity="sha256-+OYPrZLeaA+4hFCWa0SQYB+zcXmKihPDdu+P6TqUe9g=" crossorigin="anonymous">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="follow me, regrets">follow me, regrets</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="https://twitter.com/_cloudeleven_" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/cloudeleven" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Building a blog with Jekyll, Chalk, s3_website and Docker</h1>
+            <p>Docker で Jekyll (template は Chalk) と s3_website を動かして build した blog を S3 に hosting して CloudFront で配信する環境を整える手順の記録。</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    January 19, 2019
+  </span>
+    
+  <span class="article-list-divider">-</span>
+  <span class="article-list-date">
+    December 30, 2019 updated
+  </span>
+    
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+      
+      <a href="/tag/jekyll" title="See all posts with tag 'Jekyll'">Jekyll</a>
+    
+      
+      <a href="/tag/docker" title="See all posts with tag 'Docker'">Docker</a>
+    
+      
+      <a href="/tag/web" title="See all posts with tag 'Web'">Web</a>
+    
+  </div>
+</div>
+          </header>
+
+          <div class="article-content">
+            <h4 class="no_toc" id="table-of-contents">Table of Contents</h4>
+
+<ul id="markdown-toc">
+  <li><a href="#environment" id="markdown-toc-environment">Environment</a></li>
+  <li><a href="#variables" id="markdown-toc-variables">Variables</a></li>
+  <li><a href="#build-the-docker-image" id="markdown-toc-build-the-docker-image">Build the docker image</a></li>
+  <li>
+<a href="#set-up-chalk" id="markdown-toc-set-up-chalk">Set up Chalk</a>    <ul>
+      <li><a href="#remove-all-html-ext-of-posts-whenever-site-built-for-production" id="markdown-toc-remove-all-html-ext-of-posts-whenever-site-built-for-production">Remove all .html ext of posts whenever site built for production</a></li>
+      <li><a href="#set-up-disqus" id="markdown-toc-set-up-disqus">Set up DISQUS</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#set-up-aws" id="markdown-toc-set-up-aws">Set up AWS</a>    <ul>
+      <li><a href="#iam" id="markdown-toc-iam">IAM</a></li>
+      <li><a href="#s3" id="markdown-toc-s3">S3</a></li>
+      <li><a href="#certificate-manager" id="markdown-toc-certificate-manager">Certificate Manager</a></li>
+      <li><a href="#cloudfront" id="markdown-toc-cloudfront">CloudFront</a></li>
+      <li><a href="#route-53" id="markdown-toc-route-53">Route 53</a></li>
+    </ul>
+  </li>
+  <li><a href="#set-up-s3_website" id="markdown-toc-set-up-s3_website">Set up s3_website</a></li>
+  <li><a href="#change-repositorys-origin" id="markdown-toc-change-repositorys-origin">Change repository’s origin</a></li>
+  <li>
+<a href="#list-of-the-commands" id="markdown-toc-list-of-the-commands">List of the commands</a>    <ul>
+      <li><a href="#local-preview" id="markdown-toc-local-preview">local preview</a></li>
+      <li><a href="#build" id="markdown-toc-build">build</a></li>
+      <li><a href="#publish" id="markdown-toc-publish">publish</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="environment">Environment</h3>
+<ul>
+  <li>macOS 10.14.6
+    <ul>
+      <li>Docker の host として使うだけなのでほとんど関係ない</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://docs.docker.com/docker-for-mac/">Docker Desktop for Mac</a> 2.1.0.5 (40693)
+    <ul>
+      <li>Jekyll の環境を container に閉じ込めるために利用。そうする理由は、Jekyll の環境をある程度 portable にするため、及び、host の環境に影響を与えないため。</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://jekyllrb.com/">Jekyll</a>
+    <ul>
+      <li>static な website を build する engine 。</li>
+      <li>今回は Chalk に含まれているものを使ったので、Jekyll のみを独立して install することはおこなっていない。</li>
+    </ul>
+  </li>
+  <li>
+<a href="https://github.com/nielsenramon/chalk">Chalk</a> <a href="https://github.com/nielsenramon/chalk/commit/960d99faa3e9ce5bee7854623807408b04e6da79">960d99f</a>
+    <ul>
+      <li>Jekyll の template 。Jekyll そのものも含んでいるので今回はそれを使った。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="variables">Variables</h3>
+<p>以降登場する次の値は任意なので状況 (例えば別 blog を作成するなど) に応じて置き換え。</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">~/dev/docker/jekyll</code>: Jekyll を動かす Docker container の Dockerfile と docker-compose.yml 用の directory 。’docker-compose’ command はこの directory で入力する。</li>
+  <li>
+<code class="highlighter-rouge">~/dev/jekyll/regrets</code>: blog の contents 用の directory 。</li>
+  <li>
+<code class="highlighter-rouge">/var/jekyll/regrets</code>: 上記 <code class="highlighter-rouge">~/dev/jekyll/regrets</code> を mount する、Docker container 内での directory 。
+    <ul>
+      <li>実際にはそのひとつ上の /dev/jekyll を /var/jekyll に mount している。この下に blog 毎に directory が出来ていく想定。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">8496</code>: local での確認用に jekyll 組み込みの web server を動かす port 番号。</li>
+  <li>
+<code class="highlighter-rouge">regrets.cloudeleven.space</code>: blog を公開する domain 。S3 の bucket もこの名前で作った。</li>
+</ul>
+
+<h2 id="build-the-docker-image">Build the docker image</h2>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/dev/docker
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/cloudeleven/docker-jekyll jekyll
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose build</code></pre></figure>
+
+<p>Dockerfile の中で、package ‘zlib1g-dev’, ‘npm’, ‘locales’ を入れたり locale の care をしているのは、これら無しでは Chalk で error になったからであり、Jekyll を素で使うには (少なくとも使い始めるには) 不要。</p>
+
+<h2 id="set-up-chalk">Set up Chalk</h2>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/dev/jekyll
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll/
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/nielsenramon/chalk.git regrets
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>regrets
+<span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> .bundle
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'BUNDLE_PATH: "vendor/bundle"'</span> <span class="o">&gt;&gt;</span> .bundle/config
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker/jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets jekyll npm run setup
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets <span class="nt">--service-ports</span> jekyll bundle <span class="nb">exec </span>jekyll serve <span class="nt">--port</span> 8496 <span class="nt">--host</span> 0.0.0.0 <span class="nt">--watch</span> <span class="nt">--force_polling</span> <span class="nt">--drafts</span> <span class="nt">--incremental</span></code></pre></figure>
+
+<p>最後の command で web server が立ち上がるので、次の点を確認。</p>
+<ul>
+  <li>browser で http://localhost:8496/ が見える。</li>
+  <li>~/dev/jekyll/regrets/_posts/2017-12-23-introducing-chalk.md の本文を適当に変更して少し待つと http://localhost:8496/posts/2017/12/23/introducing-chalk に変更が反映される。
+問題なければ blog を書いて、local で preview する環境は整ったことになる。</li>
+</ul>
+
+<h3 id="remove-all-html-ext-of-posts-whenever-site-built-for-production">Remove all .html ext of posts whenever site built for production</h3>
+<p><code class="highlighter-rouge">.html</code> という拡張子をつけたくないので、production 向けに build する時に拡張子が削除されるようにする。</p>
+
+<ul>
+  <li>references
+    <ul>
+      <li><a href="https://jcxia.com/blog/Hosting-Jekyll-blogs-on-S3-without-html-ext" title="JC writes - jcxia.com">Upload Jekyll blogs to S3 without .html ext</a></li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll/regrets
+<span class="gp">$</span><span class="w"> </span><span class="nb">mkdir </span>_plugins
+<span class="gp">$</span><span class="w"> </span>vi _plugins/prettyurl.rb
+<span class="gp">$</span><span class="w"> </span><span class="nb">cat </span>_plugins/prettyurl.rb
+<span class="go">require 'fileutils'
+
+</span><span class="gp">#</span><span class="w"> </span>Remove all .html ext of posts, <span class="k">for </span>pretty url and S3 restriction
+<span class="gp">#</span><span class="w"> </span>Production only
+<span class="go">
+Jekyll::Hooks.register :posts, :post_write do |post|
+  if Jekyll.env == 'production'
+    path = post.destination('/')
+</span><span class="gp">    FileUtils.mv(path, path.sub(/\.html$</span>/, <span class="s1">''</span><span class="o">))</span>
+<span class="go">  end
+end
+</span><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker/jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets <span class="nt">-e</span> <span class="nv">JEKYLL_ENV</span><span class="o">=</span>production jekyll bundle <span class="nb">exec </span>jekyll build
+<span class="gp">$</span><span class="w"> </span><span class="nb">ls</span> <span class="nt">-l</span> ~/dev/jekyll/regrets/_site/posts
+<span class="go">total 104
+-rw-r--r--  1 m4c  staff  12346 10 22 22:30 chalk-sample-post-with-all-elements
+-rw-r--r--  1 m4c  staff  19563 10 22 22:30 configuring-chalk
+-rw-r--r--  1 m4c  staff  12530 10 22 22:30 introducing-chalk</span></code></pre></figure>
+
+<p>拡張子なしの file が出来ていれば ok 。</p>
+
+<h3 id="set-up-disqus">Set up DISQUS</h3>
+
+<p>Jekyll で作る blog は static であるがゆえに独自の comment system を持たないため、外部のものを利用する。
+Chalk は元々 <a href="https://disqus.com/" title="DISQUS - disqus.com">DISQUS</a> を integrate してあるので、DISQUS で site の設定を作って、作成された ID を _config.yml に書くだけ。</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span>vi _config.yml
+<span class="gp">$</span><span class="w"> </span>git diff _config.yml
+<span class="go">diff --git a/_config.yml b/_config.yml
+index a77c5b9..7e4f410 100755
+--- a/_config.yml
++++ b/_config.yml
+</span><span class="gp">@@ -10,7 +10,7 @@ url: #</span><span class="w"> </span>add your site url <span class="o">(</span>format: https://example.com<span class="o">)</span>
+<span class="go"> 
+</span><span class="gp"> about_enabled: false #</span><span class="w"> </span>Change to <span class="nb">true </span><span class="k">if </span>you wish to show an icon <span class="k">in </span>the navigation that redirects to the about page
+<span class="gp"> baseurl: #</span><span class="w"> </span>Set <span class="k">if </span>blog doesn<span class="s1">'t sit at the root of the domain (format: /blog)
+</span><span class="gp">-discus_identifier: #</span><span class="w"> </span><span class="s1">Add your Disqus identifier
+</span><span class="go">+discus_identifier: regrets
+</span><span class="gp"> ga_analytics: #</span><span class="w"> </span>Add your GA Tracking Id
+<span class="gp"> local_fonts: false #</span><span class="w"> </span>Change to <span class="nb">true </span><span class="k">if </span>you wish to use <span class="nb">local </span>fonts
+<span class="gp"> rss_enabled: true #</span><span class="w"> </span>Change to <span class="nb">false </span><span class="k">if </span>not</code></pre></figure>
+
+<h2 id="set-up-aws">Set up AWS</h2>
+
+<p>S3 で hosting, CloudFront で配信するので、そのための準備。</p>
+
+<ul>
+  <li>references
+    <ul>
+      <li><a href="https://tjwallace.ca/2017-05-16/jekyll-on-s3-and-cloudfront/" title="TJ WALLACE ー tjwallace.ca">Jekyll on S3 and CloudFront using s3_website</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iam">IAM</h3>
+
+<p>以下、用途別にふたつの group を作成し、権限を attach 。それぞれに新規 user をひとつずつ追加した。</p>
+
+<ul>
+  <li>s3_website 用
+    <ul>
+      <li>
+<a href="https://github.com/laurilehmijoki/s3_website/blob/master/additional-docs/setting-up-aws-credentials.md">Setting up AWS credentials</a> に従って作った CloudFront に対する全権と S3 の blog 用の bucket に対する権限を持った group 。</li>
+      <li>追加した user の access key を作成して access key ID と access key secret を控えておく。</li>
+    </ul>
+  </li>
+  <li>作業用
+    <ul>
+      <li>blog 用の作業を実行するための group 。基本的には S3 と CloudFront の権限があれば良いはずだけど、今回は、他で運用していた既存の domain を移したり、新たに証明書を作ったりする必要があったので Route 53 と Certificate Manager の権限も付けた。</li>
+      <li>以降の AWS での作業はこの user で行う。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="s3">S3</h3>
+
+<p>bucket 作成。以下以外は default で。</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">bucket name</code>: regrets.cloudeleven.space</li>
+  <li>
+<code class="highlighter-rouge">region</code>: Tokyo</li>
+  <li>
+<code class="highlighter-rouge">Bucket Policy</code>: 以下</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+  </span><span class="nl">"Version"</span><span class="p">:</span><span class="s2">"2012-10-17"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"Statement"</span><span class="p">:[{</span><span class="w">
+    </span><span class="nl">"Sid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PublicReadForGetBucketObjects"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Allow"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Principal"</span><span class="p">:</span><span class="w"> </span><span class="s2">"*"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"Action"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"s3:GetObject"</span><span class="p">],</span><span class="w">
+    </span><span class="nl">"Resource"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"arn:aws:s3:::regrets.cloudeleven.space/*"</span><span class="p">]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+<p>Static website hosting の設定とかしたくなるけど、後で s3_website がやってくれるのでここではしなくて良い。</p>
+
+<h3 id="certificate-manager">Certificate Manager</h3>
+<ul>
+  <li>references
+    <ul>
+      <li><a href="https://kosukety.org/notes-when-applying-the-wildcard-certificate-in-zone-apex/" title="kosukety blog - kosukety.org">Zone Apex環境でワイルドカード証明書を適用するときの注意点</a></li>
+      <li><a href="http://iryond.hatenablog.com/entry/2016/10/08/130918" title="なるべくシンプルに - iryond.hatenablog.com">CloudFrontとACM連携でハマった話。</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>今回は *.cloudeleven.space で証明書を作った。
+region が <code class="highlighter-rouge">US East (N. Virginia)</code> であることを確認して次のように設定</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Domain name</code>: *.cloudeleven.space</li>
+  <li>
+<code class="highlighter-rouge">Another name</code>: cloudeleven.space</li>
+</ul>
+
+<p>確認の mail が来るので対応。</p>
+
+<h3 id="cloudfront">CloudFront</h3>
+
+<p>次の設定で distribution を作成。</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Delivery Method</code>: Web</li>
+  <li>
+<code class="highlighter-rouge">Origin Settings</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">Origin Domain Name</code>: regrets.cloudeleven.space.s3-website-ap-northeast-1.amazonaws.com
+        <ul>
+          <li>dropdown される list からは <code class="highlighter-rouge">選択しない</code> ことに注意。<a href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/dev/WebsiteEndpoints.html" title="aws - docs.aws.amazon.com">ウェブサイトエンドポイント</a> を参考に。</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">Origin ID</code>: regrets.cloudeleven.space</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Default Cache Behavior Settings</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">Viewer Protocol Policy</code>: Redirect HTTP to HTTPS</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Distribution Settings</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">Price Class</code>: Use U.S., Canada, Europe, Asia and Africa</li>
+      <li>
+<code class="highlighter-rouge">Alternate Domain Names (CNAMEs)</code>: regrets.cloudeleven.space</li>
+      <li>
+<code class="highlighter-rouge">SSL Certificate</code>: Custom SSL Certificate (example.com): 作成した証明書を選択</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Status が Deployed になるのを待つ。割とかかる<img class="emoji" title=":coffee:" alt=":coffee:" src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png" height="20" width="20">。</p>
+
+<h3 id="route-53">Route 53</h3>
+
+<p>今回は既に <a href="https://www.value-domain.com/" title="value-domain - www.value-domain.com">value-domain</a> で購入・管理している domain の管理を Route 53 に移した上で運用したかったので、そのための作業を次の page を参考にして行なった。</p>
+
+<ul>
+  <li>references
+    <ul>
+      <li><a href="http://yamada.daiji.ro/blog/?p=87" title="しびら - yamada.daiji.ro">Value Domainで購入したドメインをAWSのRoute53で使用する</a></li>
+      <li><a href="https://qiita.com/azusanakano/items/2169e26c4d5de8447b96" title="Qiita - qiita.com">【ネームサーバ設定】ValueDomainのネームサーバからAWSのRoute53を使用するよう変更</a></li>
+      <li><a href="https://www.dondari.com/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AERoute_53" title="dondari - www.dondari.com">はじめてのRoute 53</a></li>
+      <li><a href="https://qiita.com/mmmm/items/0feaf5bf6056614df5b8" title="Qiita - qiita.com">AWS Route53 各レコードの登録方法</a></li>
+      <li><a href="https://serverfault.com/questions/332019/set-google-apps-spf-record-in-amazon-aws-route-53" title="serverfault - serverfault.com">set Google Apps SPF record in Amazon AWS Route 53</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>で、blog 用に作成した Hosted Zone の下に Record Set を作る。Type 以外は同じ設定で IPv4 用と IPv6 用のふたつ。</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Name</code>: regrets.cloudeleven.space.</li>
+  <li>
+<code class="highlighter-rouge">Type</code>:
+    <ul>
+      <li>IPv4: A – IPv4 address.</li>
+      <li>IPv6: AAAA – IPv6 address.</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Alias</code>: Yes</li>
+  <li>
+<code class="highlighter-rouge">Alias Target</code>: — CloudFront distributions — から CloudFront で作成したものを選ぶ</li>
+  <li>
+<code class="highlighter-rouge">Routing Policy</code>： Simple</li>
+  <li>
+<code class="highlighter-rouge">Evaluate Target Health</code>: No</li>
+</ul>
+
+<h2 id="set-up-s3_website">Set up s3_website</h2>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker/jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets jekyll s3_website cfg create
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll/regrets
+<span class="gp">$</span><span class="w"> </span><span class="nb">cp</span> <span class="nt">-i</span> s3_website.yml<span class="o">{</span>,.orig<span class="o">}</span>
+<span class="gp">$</span><span class="w"> </span>vi s3_website.yml
+<span class="gp">$</span><span class="w"> </span>diff s3_website.yml<span class="o">{</span>.orig,<span class="o">}</span>
+<span class="go">4,6c4,6
+&lt; s3_id: YOUR_AWS_S3_ACCESS_KEY_ID
+&lt; s3_secret: YOUR_AWS_S3_SECRET_ACCESS_KEY
+&lt; s3_bucket: your.blog.bucket.com
+---
+</span><span class="gp">&gt;</span><span class="w"> </span>s3_id: &lt;%<span class="o">=</span> ENV[<span class="s1">'s3_id'</span><span class="o">]</span> %&gt;
+<span class="gp">&gt;</span><span class="w"> </span>s3_secret: &lt;%<span class="o">=</span> ENV[<span class="s1">'s3_secret'</span><span class="o">]</span> %&gt;
+<span class="gp">&gt;</span><span class="w"> </span>s3_bucket: &lt;%<span class="o">=</span> ENV[<span class="s1">'s3_bucket'</span><span class="o">]</span> %&gt;
+<span class="go">30c30
+</span><span class="gp">&lt; #</span><span class="w"> </span>s3_endpoint: ap-northeast-1
+<span class="go">---
+</span><span class="gp">&gt;</span><span class="w"> </span>s3_endpoint: ap-northeast-1
+<span class="go">40c40
+</span><span class="gp">&lt; #</span><span class="w"> </span>cloudfront_distribution_id: your-dist-id
+<span class="go">---
+</span><span class="gp">&gt;</span><span class="w"> </span>cloudfront_distribution_id: &lt;%<span class="o">=</span> ENV[<span class="s1">'cloudfront_distribution_id'</span><span class="o">]</span> %&gt;
+<span class="go">42,48c42,50
+</span><span class="gp">&lt; #</span><span class="w"> </span>cloudfront_distribution_config:
+<span class="gp">&lt; #</span><span class="w">   </span>default_cache_behavior:
+<span class="gp">&lt; #</span><span class="w">     </span>min_ttl: &lt;%<span class="o">=</span> 60 <span class="k">*</span> 60 <span class="k">*</span> 24 %&gt;
+<span class="gp">&lt; #</span><span class="w">   </span>aliases:
+<span class="gp">&lt; #</span><span class="w">     </span>quantity: 1
+<span class="gp">&lt; #</span><span class="w">     </span>items:
+<span class="gp">&lt; #</span><span class="w">       </span>- your.website.com
+<span class="go">---
+</span><span class="gp">&gt;</span><span class="w"> </span>cloudfront_distribution_config:
+<span class="gp">&gt;</span><span class="w">   </span>default_cache_behavior:
+<span class="gp">&gt;</span><span class="w">     </span>min_ttl: &lt;%<span class="o">=</span> 60 <span class="k">*</span> 60 <span class="k">*</span> 24 %&gt;
+<span class="gp">&gt;</span><span class="w">   </span>aliases:
+<span class="gp">&gt;</span><span class="w">     </span>quantity: 1
+<span class="gp">&gt;</span><span class="w">     </span>items:
+<span class="gp">&gt;</span><span class="w">       </span>- &lt;%<span class="o">=</span> ENV[<span class="s1">'cloudfront_alias1'</span><span class="o">]</span> %&gt;
+<span class="gp">&gt;</span><span class="w"> </span>max_age: 120
+<span class="gp">&gt;</span><span class="w"> </span><span class="nb">gzip</span>: <span class="nb">true</span>
+<span class="go">
+</span><span class="gp">$</span><span class="w"> </span>vi .env
+<span class="gp">$</span><span class="w"> </span><span class="nb">cat</span> .env
+<span class="go">s3_id=IAM で s3_website 用に作った user の access key ID
+s3_secret=IAM で s3_website 用に作った user の access key secret
+s3_bucket=regrets.cloudeleven.space
+cloudfront_distribution_id=CloudFront の distribution id
+cloudfront_alias1=regrets.cloudeleven.space
+
+</span><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker/jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets jekyll s3_website cfg apply</code></pre></figure>
+
+<p>不必要な file が upload されないための設定だけ済ませてから一旦試しに upload してみる。</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll/regrets
+<span class="gp">$</span><span class="w"> </span><span class="nb">cp</span> <span class="nt">-ip</span> _config.yml<span class="o">{</span>,.orig<span class="o">}</span>
+<span class="gp">$</span><span class="w"> </span>vi _config.yml
+<span class="gp">$</span><span class="w"> </span>diff _config.yml<span class="o">{</span>.orig,<span class="o">}</span>
+<span class="go">76a77,81
+</span><span class="gp">&gt;</span><span class="w">   </span>- .bundle/
+<span class="gp">&gt;</span><span class="w">   </span>- .env
+<span class="gp">&gt;</span><span class="w">   </span>- s3_website.yml
+<span class="gp">&gt;</span><span class="w">   </span>- s3_website.yml.orig
+<span class="gp">&gt;</span><span class="w">   </span>- _config.yml.orig
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/docker/jekyll
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets <span class="nt">-e</span> <span class="nv">JEKYLL_ENV</span><span class="o">=</span>production jekyll bundle <span class="nb">exec </span>jekyll build
+<span class="gp">$</span><span class="w"> </span>docker-compose run <span class="nt">--rm</span> <span class="nt">-w</span> /var/jekyll/regrets jekyll s3_website push</code></pre></figure>
+
+<p>browser で https://regrets.cloudeleven.space/ が見えることと、S3 に上がっちゃいけないものが上がってないことを確認。</p>
+
+<h2 id="change-repositorys-origin">Change repository’s origin</h2>
+
+<p>ひと通り基本的な準備が出来たので、blog を丸ごと git で管理出来るようにする。</p>
+
+<p>Chalk を clone した directory がそのまま自分の blog の source になるので、commit 可能な remote を追加するだけでも良いのだけど、何となく気持ち悪いので自分の remote を origin にしておく。
+Chalk の remote を別名で残しておくのは、Chalk の更新に追従しやすくするため。</p>
+
+<p>先に remote 先となる repository を作成しておいてから、</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll/regrets
+<span class="gp">$</span><span class="w"> </span>git remote add chalk git@github.com:nielsenramon/chalk.git
+<span class="gp">$</span><span class="w"> </span>git remote set-url origin git@github.com:cloudeleven/regrets.git
+<span class="gp">$</span><span class="w"> </span>git remote <span class="nt">-v</span>
+<span class="go">chalk   git@github.com:nielsenramon/chalk.git (fetch)
+chalk   git@github.com:nielsenramon/chalk.git (push)
+origin  git@github.com:cloudeleven/regrets.git (fetch)
+origin  git@github.com:cloudeleven/regrets.git (push)</span></code></pre></figure>
+
+<p>確認。念の為変更なしの状態で一旦試す。</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span>git stash save
+<span class="gp">$</span><span class="w"> </span>git branch <span class="nt">-a</span>
+<span class="go">* master
+</span><span class="gp">  remotes/origin/HEAD -&gt;</span><span class="w"> </span>origin/master
+<span class="go">  remotes/origin/gh-pages
+  remotes/origin/master
+  remotes/origin/website
+</span><span class="gp">$</span><span class="w"> </span>git fetch chalk
+<span class="gp">$</span><span class="w"> </span>git branch <span class="nt">-a</span>
+<span class="go">* master
+  remotes/chalk/gh-pages
+  remotes/chalk/master
+  remotes/chalk/website
+</span><span class="gp">  remotes/origin/HEAD -&gt;</span><span class="w"> </span>origin/master
+<span class="go">  remotes/origin/gh-pages
+  remotes/origin/master
+  remotes/origin/website
+</span><span class="gp">$</span><span class="w"> </span>git push <span class="nt">-u</span> origin master</code></pre></figure>
+
+<p>期待通りに動くことが確認出来たら、ここまでの変更を commit, push 。</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span><span class="w"> </span>git stash pop
+<span class="gp">$</span><span class="w"> </span>vi README.md <span class="c"># 内容を適当に変えておく</span>
+<span class="gp">$</span><span class="w"> </span>vi .gitignore
+<span class="gp">$</span><span class="w"> </span>git diff .gitignore
+<span class="go">diff --git a/.gitignore b/.gitignore
+index e91e057..f0d223f 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -13,3 +13,8 @@ Gemfile.lock
+ package-lock.json
+ yarn.lock
+ .idea
++.env
++_config.yml.orig
++s3_website.yml.orig
++vendor/
++_drafts/
+
+</span><span class="gp">$</span><span class="w"> </span>git add <span class="nt">-A</span>
+<span class="gp">$</span><span class="w"> </span>git commit <span class="nt">-m</span> <span class="s1">'add and modify files for bundler, plugins and w3_website.'</span>
+<span class="gp">$</span><span class="w"> </span>git push</code></pre></figure>
+
+<h2 id="list-of-the-commands">List of the commands</h2>
+
+<p>環境が出来たら、以下の command を繰り返して entry を書いたり、徐々に好みに近付けていくことを繰り返すだけ。</p>
+
+<h4 id="local-preview">local preview</h4>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">docker-compose run --rm -w /var/jekyll/regrets --service-ports jekyll bundle exec jekyll serve --port 8496 --host 0.0.0.0 --watch --force_polling --drafts --incremental</span></code></pre></figure>
+
+<p><code class="highlighter-rouge">--draft</code> と <code class="highlighter-rouge">--incremental</code> は状況に応じて。</p>
+
+<h4 id="build">build</h4>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">docker-compose run --rm -w /var/jekyll/regrets -e JEKYLL_ENV=production jekyll bundle exec jekyll build</span></code></pre></figure>
+
+<h4 id="publish">publish</h4>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="go">docker-compose run --rm -w /var/jekyll/regrets jekyll s3_website push</span></code></pre></figure>
+
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Building+a+blog+with+Jekyll,+Chalk,+s3_website+and+Docker%20-%20https://regrets.cloudeleven.space/posts/2019/01/19/building-a-blog%20by%20@_cloudeleven_" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"></path></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://regrets.cloudeleven.space/posts/2019/01/19/building-a-blog" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"></path></svg>
+            </a>
+          </div>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://regrets.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    © 2019 cloudeleven.
+    Powered by
+    <a href="https://jekyllrb.com/" rel="noreferrer noopener" target="_blank" title="Jekyll">Jekyll</a> and <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Chalk">Chalk</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127518451-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127518451-1');
+  </script>
+
+
+<script integrity="sha256-20hJsLGuzNZXbYFyN65CU8Wlpfl4d/h58lUuyaZpd3U=" crossorigin="anonymous" src="/assets/vendor-db4849b0b1aeccd6576d817237ae4253c5a5a5f97877f879f2552ec9a6697775.js" type="text/javascript"></script>
+
+
+  <script integrity="sha256-zX6uZyZbzRAdD1mEVrFhcbJTPXFNzDpbbdrP3yNMTLw=" crossorigin="anonymous" src="/assets/webfonts-cd7eae67265bcd101d0f598456b16171b2533d714dcc3a5b6ddacfdf234c4cbc.js" type="text/javascript"></script>
+
+
+
+  <script integrity="sha256-dpHzfpFUx9U/dRWlGNuw+vOnPZs9W3VSKGehNJUtCnY=" crossorigin="anonymous" src="/assets/scrollappear-7691f37e9154c7d53f7515a518dbb0faf3a73d9b3d5b75522867a134952d0a76.js" type="text/javascript"></script>
+
+
+<script integrity="sha256-e2Jg3rmOZKikK5f1wYrSqMlQfXD5oJekQLNUdw+Xncc=" crossorigin="anonymous" src="/assets/application-7b6260deb98e64a8a42b97f5c18ad2a8c9507d70f9a097a440b354770f979dc7.js" type="text/javascript"></script>
+
+
+</body>
+</html>
