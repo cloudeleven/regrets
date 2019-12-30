@@ -3,6 +3,7 @@ layout: post
 title: "Building a blog with Jekyll, Chalk, s3_website and Docker"
 description: "Docker で Jekyll (template は Chalk) と s3_website を動かして build した blog を S3 に hosting して CloudFront で配信する環境を整える手順の記録。"
 tags: [jekyll, docker, web]
+updated: 2019-12-30
 ---
 
 #### Table of Contents
@@ -12,14 +13,14 @@ tags: [jekyll, docker, web]
 {:toc}
 
 ### Environment
-- macOS 10.14.2
+- macOS 10.14.6
   - Docker の host として使うだけなのでほとんど関係ない
-- [Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/) 2.0.0.0-mac81 (29211) 
+- [Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/) 2.1.0.5 (40693) 
   - Jekyll の環境を container に閉じ込めるために利用。そうする理由は、Jekyll の環境をある程度 portable にするため、及び、host の環境に影響を与えないため。
 - [Jekyll](https://jekyllrb.com/)
   - static な website を build する engine 。
   - 今回は Chalk に含まれているものを使ったので、Jekyll のみを独立して install することはおこなっていない。
-- [Chalk](https://github.com/nielsenramon/chalk) [c0267a5](https://github.com/nielsenramon/chalk/commit/c0267a59c6b45d7ad0e60362e9e1dbd9906b97ed)
+- [Chalk](https://github.com/nielsenramon/chalk) [960d99f](https://github.com/nielsenramon/chalk/commit/960d99faa3e9ce5bee7854623807408b04e6da79)
   - Jekyll の template 。Jekyll そのものも含んでいるので今回はそれを使った。
 
 ### Variables
