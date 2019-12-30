@@ -7,11 +7,11 @@ Thumbs.db
 !.keep
 *.sass-cache
 /_assets/yarn/
-/_site/
 /.jekyll-cache/
 Gemfile.lock
 package-lock.json
 yarn.lock
+.jekyll-metadata
 .idea
 .env
 _config.yml.orig
