@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>follow me, regrets | Let Jekyll break out of Docker</title>
+  <meta name="description" content="Jekyll を Docker で動かしていたけど、遅くて話にならないのでやめた。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Let Jekyll break out of Docker">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://regrets.cloudeleven.space/posts/2020/01/08/let-jekyll-break-out-of-docker">
+  <meta property="og:description" content="Jekyll を Docker で動かしていたけど、遅くて話にならないのでやめた。">
+  <meta property="og:site_name" content="follow me, regrets">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://regrets.cloudeleven.space/posts/2020/01/08/let-jekyll-break-out-of-docker">
+  <meta name="twitter:title" content="Let Jekyll break out of Docker">
+  <meta name="twitter:description" content="Jekyll を Docker で動かしていたけど、遅くて話にならないのでやめた。">
+
+  
+    
+      <meta property="og:image" content="https://regrets.cloudeleven.space/assets/documentation/chalk-docker-before-after-474608756290472d47f5c8b3e72d2498a1da5df59cccf2e8deef9d3853abd47d.png">
+      <meta name="twitter:image" content="https://regrets.cloudeleven.space/assets/documentation/chalk-docker-before-after-474608756290472d47f5c8b3e72d2498a1da5df59cccf2e8deef9d3853abd47d.png">
+    
+  
+
+  <link href="https://regrets.cloudeleven.space/feed.xml" type="application/rss+xml" rel="alternate" title="follow me, regrets Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-d8b6c4e8f03e28e8c608d251894a181b4dc76ae167efda475e70336230e984e9.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-185e8a7c1ed7f3a28310c4628cda3f1fab5316eade2941ddcb0f4c8ffd7b87ec.png">
+      <link rel="stylesheet" type="text/css" href="/assets/light-f8e60fad92de680fb88450966b4490601fb371798a8a13c376ef8fe93a947bd8.css" integrity="sha256-+OYPrZLeaA+4hFCWa0SQYB+zcXmKihPDdu+P6TqUe9g=" crossorigin="anonymous">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="follow me, regrets">follow me, regrets</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="https://twitter.com/_cloudeleven_" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/cloudeleven" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Let Jekyll break out of Docker</h1>
+            <p>Jekyll を Docker で動かしていたけど、遅くて話にならないのでやめた。</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    January 8, 2020
+  </span>
+    
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+      
+      <a href="/tag/jekyll" title="See all posts with tag 'Jekyll'">Jekyll</a>
+    
+      
+      <a href="/tag/web" title="See all posts with tag 'Web'">Web</a>
+    
+  </div>
+</div>
+          </header>
+
+          <div class="article-content">
+            <p><a href="/assets/documentation/chalk-docker-before-after@2x-5ee07ef7bab7d7f5f7bae24a775e6b3180bb7aaaf9ecdd2728ca4caf219f0436.png">
+  <img src="/assets/documentation/chalk-docker-before-after-474608756290472d47f5c8b3e72d2498a1da5df59cccf2e8deef9d3853abd47d.png" alt="Chalk intro" class="zooming" data-rjs="/assets/documentation/chalk-docker-before-after@2x-5ee07ef7bab7d7f5f7bae24a775e6b3180bb7aaaf9ecdd2728ca4caf219f0436.png" data-zooming-width="2080" data-zooming-height="1138" />
+</a></p>
+
+<h4 class="no_toc" id="table-of-contents">Table of Contents</h4>
+
+<ul id="markdown-toc">
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#before-and-after" id="markdown-toc-before-and-after">Before and After</a></li>
+  <li><a href="#memorandum" id="markdown-toc-memorandum">Memorandum</a>    <ul>
+      <li><a href="#environment" id="markdown-toc-environment">Environment</a></li>
+      <li><a href="#variables" id="markdown-toc-variables">Variables</a></li>
+      <li><a href="#clone-repository" id="markdown-toc-clone-repository">Clone repository</a></li>
+      <li><a href="#install-ruby-and-node-then-setup-chalk" id="markdown-toc-install-ruby-and-node-then-setup-chalk">Install Ruby and Node, then setup Chalk</a></li>
+      <li><a href="#install-java-for-s3_website" id="markdown-toc-install-java-for-s3_website">Install Java for s3_website</a></li>
+    </ul>
+  </li>
+  <li><a href="#digression" id="markdown-toc-digression">Digression</a>    <ul>
+      <li><a href="#script-for-after" id="markdown-toc-script-for-after">Script for after</a></li>
+      <li><a href="#script-for-before" id="markdown-toc-script-for-before">Script for before</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+  <li>普通に mac で build するようにした。取り敢えず、超快適。
+    <ul>
+      <li>環境を portable にしたくて Docker で動かしていたのだけど、次の理由でその意味が判らなくなった。
+        <ul>
+          <li>blog の環境を丸ごと git で管理できている。</li>
+          <li>そもそも環境を作るのが大した手間ではない。</li>
+          <li>仮に Docker を経由させることにどんな利点があったとしても、その遅さを我慢するのに釣り合うものではない。
+            <ul>
+              <li>後述するけど、とにかく遅くて書く気にならない…。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Jekyll に限らず Docker で動かすと遅いという話は色々あるようで、原因のいくつかには対処方法もあるらしいのだけど、それを試してまでこの環境を維持する動機がない。
+        <ul>
+          <li>何故なら、そもそも本当はもう Jekyll をやめたい。<a href="https://www.gatsbyjs.org/">Gatsby</a> で作り直したいのだが、それが出来るまで blog を書かない、ということにしてしまうと次の entry がまた 1 年後になってしまうので、移行計画は進めつつ当面は Jekyll でしのぐことにした。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>別方向の知見として、分割出来ないひとかたまりの処理に長い時間がかかるのはやはりとにかく駄目、ということを再確認した。
+    <ul>
+      <li>ひとつの処理に長い時間がかかると試行錯誤もままならないし、最終的な検証をする気もなくなる。本当に良いことがない。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="before-and-after">Before and After</h2>
+
+<ul>
+  <li>冒頭の画像は左右それぞれ Docker を経由した時とそうでない時の、local preview を起動するまでにかかる時間の比較なんだけど、mac で普通に動かすと 5 秒以内で終わるところ、Docker を経由させると 127 秒かかっている。酷い。</li>
+  <li>とは言え、遅いのが最初だけなら対処のしようはあるのだけど、その後も遅い様子が次の動画。
+    <ul>
+      <li>この動画では上側で動いているのがすべて Docker 経由、下側で動いているのがすべて mac で直に動かしているもの。</li>
+      <li>左の terminal では、それぞれの環境の css を同時に変更して保存している。</li>
+      <li>中央の terminal では、それぞれの Jekyll の実行時の log が流れている。</li>
+      <li>右の browser では live reload されて変更が反映される様子が見える。</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe src="https://www.youtube.com/embed/NwCtfyIP48w" frameborder="0" allow="accelerometer" allowfullscreen=""></iframe>
+</div>
+
+<ul>
+  <li>酷い。これ、文章を書いている時は Markdown を書くだけだから頻繁に preview する必要もなくまだ我慢のしようもあるんだけど、css の値を試行錯誤しながら調整する、みたいなことはまったく出来ない。やる気を無くする。</li>
+</ul>
+
+<h2 id="memorandum">Memorandum</h2>
+
+<p>Docker 抜きの環境に変更した際の手順の記録。</p>
+
+<h4 id="environment">Environment</h4>
+<ul>
+  <li>macOS 10.14.6</li>
+  <li><a href="https://github.com/nielsenramon/chalk">Chalk</a> <a href="https://github.com/nielsenramon/chalk/commit/960d99faa3e9ce5bee7854623807408b04e6da79">960d99f</a>
+    <ul>
+      <li>今回の移行では実際には、この commit 時点での Chalk を取り込んだ <a href="https://github.com/cloudeleven/regrets">自分の repository</a> を利用した。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="variables">Variables</h4>
+<p>以降登場する次の値は任意なので状況 (例えば別 blog を作成するなど) に応じて置き換え。</p>
+<ul>
+  <li><code class="highlighter-rouge">~/dev/jekyll/regrets_anyenv</code>: blog の contents 用の directory 。</li>
+</ul>
+
+<h3 id="clone-repository">Clone repository</h3>
+<ul>
+  <li>以下では既存の自分の repository から clone しているが、素の Chalk から始める場合は、Chalk の repository から。その場合も以降はほぼ同じ手順でいけるはず。</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span> ~/dev/jekyll
+<span class="gp">$</span><span class="w"> </span>git clone git@github.com:cloudeleven/regrets.git regrets_anyenv</code></pre></figure>
+
+<h3 id="install-ruby-and-node-then-setup-chalk">Install Ruby and Node, then setup Chalk</h3>
+<ul>
+  <li>ruby と node の install はそれぞれ rbenv, nodenv を使い、rbenv, nodenv は anyenv から入れる前提。</li>
+  <li>ruby の version を指定しているのは、なるべく同じ条件で比較したかったから。
+    <ul>
+      <li>なのに node の version には気が回らなかった…。12.7.0 というのはたぶんこの作業をした時の最新。</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>anyenv update
+<span class="gp">$</span><span class="w"> </span>anyenv git pull
+<span class="gp">$</span><span class="w"> </span>rbenv <span class="nb">install </span>2.5.1
+<span class="gp">$</span><span class="w"> </span><span class="c"># まだやってなければ</span>
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install </span>nodenv
+<span class="gp">$</span><span class="w"> </span><span class="c"># まだやってなければ</span>
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/pine/nodenv-yarn-install.git <span class="s2">"</span><span class="si">$(</span>nodenv root<span class="si">)</span><span class="s2">/plugins/nodenv-yarn-install"</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># plugin の力で yarn を入れたいので、使おうとしている version が既に install 済みなら</span>
+<span class="gp">$</span><span class="w"> </span>nodenv uninstall 12.7.0
+<span class="gp">$</span><span class="w"> </span>nodenv <span class="nb">install </span>12.7.0
+<span class="gp">$</span><span class="w"> </span><span class="nb">exec</span> <span class="nv">$SHELL</span> <span class="nt">-l</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>regrets_anyenv
+<span class="gp">$</span><span class="w"> </span>rbenv <span class="nb">local </span>2.5.1
+<span class="gp">$</span><span class="w"> </span>rbenv versions       <span class="c"># 確認</span>
+<span class="gp">$</span><span class="w"> </span>nodenv <span class="nb">local </span>12.7.0
+<span class="gp">$</span><span class="w"> </span>nodenv versions      <span class="c"># 確認</span>
+<span class="gp">$</span><span class="w"> </span>vi .env              <span class="c"># あるいは既にどこかにあるならそこから持ってくる</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># 素の Chalk から始めた場合等、以下がまだ行なわれていない場合、.bundle に path を書く</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># mkdir .bundle</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># echo 'BUNDLE_PATH: "vendor/bundle"' &gt;&gt; .bundle/config </span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># 以下では既存の gem が install された際の bundler の version を調べ、同じ version の bundler を install しているが、</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># 素の Chalk から始めた場合等、初めて npm run setup する場合は単に gem install bundler すれば良い</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">tail</span> <span class="nt">-n2</span> Gemfile.lock
+<span class="go">BUNDLED WITH
+   2.1.2
+</span><span class="gp">$</span><span class="w"> </span>gem <span class="nb">install </span>bundler <span class="nt">-v</span> 2.1.2
+<span class="gp">$</span><span class="w"> </span>npm run setup
+<span class="gp">$</span><span class="w"> </span>bundle <span class="nb">exec </span>jekyll serve <span class="nt">--livereload</span>           <span class="c"># local preview 環境が立ち上がることを確認</span>
+<span class="gp">$</span><span class="w"> </span><span class="nv">JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build  <span class="c"># build 結果を確認</span></code></pre></figure>
+
+<h3 id="install-java-for-s3_website">Install Java for s3_website</h3>
+<ul>
+  <li>s3_website は Java に依存しているので、mac に Java の導入が必要。</li>
+  <li>最初、無邪気に <code class="highlighter-rouge">brew cask install java</code> とかやったら version 13 が入って、それだと s3_website が動かなかったので、Docker で動かしていた時に合わせて version 8 を入れている。</li>
+  <li>project 毎に Java の version を使い分けやすいように jenv を使った。</li>
+  <li>s3_website や、それが依存する AWS の設定に関しては <a href="/posts/2019/01/19/building-a-blog">Docker 利用を前提として Jekyll を導入した際の entry</a> を参照。この設定は Docker 利用の有無に影響されない。</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">$</span><span class="w"> </span>brew <span class="nb">install </span>jenv
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.jenv/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'eval "$(jenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="gp">$</span><span class="w"> </span><span class="nb">exec</span> <span class="nv">$SHELL</span> <span class="nt">-l</span>
+<span class="gp">$</span><span class="w"> </span>brew tap AdoptOpenJDK/openjdk
+<span class="gp">$</span><span class="w"> </span>brew cask <span class="nb">install </span>adoptopenjdk8
+<span class="gp">$</span><span class="w"> </span>/usr/libexec/java_home <span class="nt">-V</span>        <span class="c"># 現状確認</span>
+<span class="go">Matching Java Virtual Machines (2):
+    13.0.1, x86_64:     "OpenJDK 13.0.1"        /Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
+    1.8.0_232, x86_64:  "AdoptOpenJDK 8"        /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+
+/Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
+</span><span class="gp">$</span><span class="w"> </span>jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+<span class="gp">$</span><span class="w"> </span>jenv <span class="nb">local </span>1.8.0.232
+<span class="gp">$</span><span class="w"> </span><span class="nb">exec</span> <span class="nv">$SHELL</span> <span class="nt">-l</span>
+<span class="gp">$</span><span class="w"> </span>jenv versions      <span class="c"># 確認</span>
+<span class="go">  system (set by /Users/m4c/.jenv/version)
+  1.8
+* 1.8.0.232
+  13.0
+  13.0.1
+  openjdk64-1.8.0.232
+  openjdk64-13.0.1
+</span><span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="k">${</span><span class="nv">JAVA_HOME</span><span class="k">}</span>  <span class="c"># 確認</span>
+<span class="go">/Users/m4c/.jenv/versions/1.8.0.232
+</span><span class="gp">$</span><span class="w"> </span>gem <span class="nb">install</span> <span class="nt">--no-document</span> s3_website
+<span class="gp">$</span><span class="w"> </span><span class="c"># 現状で publish して良い状態なら</span>
+<span class="gp">$</span><span class="w"> </span><span class="nv">JEKYLL_ENV</span><span class="o">=</span>production bundle <span class="nb">exec </span>jekyll build
+<span class="gp">$</span><span class="w"> </span>s3_website push</code></pre></figure>
+
+<h2 id="digression">Digression</h2>
+
+<p>完全に余談だけど、冒頭の画像の結果を出すための script を書くのにとても苦労したので、その記録を残しておく。</p>
+
+<p>どちらの script もやりたいことは同じで、Jekyll を実行した際に流れる log の 1 行毎に経過時間を合わせて表示する、というもの。</p>
+
+<h3 id="script-for-after">Script for after</h3>
+
+<p>Docker を使わない場合の script 。</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">printf "\n\n\n%0*d after %0*d\n\n" 17 0 17 0 | sed "s/0/$</span><span class="o">(</span><span class="nb">echo</span> <span class="nt">-ne</span> <span class="s1">'\U1F407'</span><span class="o">)</span>/g<span class="s2">" </span><span class="se">\</span><span class="s2">
+&amp;&amp; START_TIME=</span><span class="si">$(</span>gdate +%s.%3N<span class="si">)</span><span class="s2"> </span><span class="se">\</span><span class="s2">
+&amp;&amp; while IFS= read line; do
+</span><span class="gp">  lap_time=$</span><span class="s2">((</span><span class="si">$(</span>gdate +%s.%3N<span class="si">)</span><span class="s2">-</span><span class="nv">$START_TIME</span><span class="s2">))
+</span><span class="gp">  printf "\e[33m%07.3f\e[m %s\n" $</span><span class="s2">lap_time </span><span class="nv">$line</span><span class="s2"> 
+</span><span class="go">done &lt; &lt;(bundle exec jekyll serve --drafts --livereload)</span></code></pre></figure>
+
+<p>こちらは特に難しいことはなかったが、細かい点では</p>
+
+<ul>
+  <li>milli 秒まで表示したかったので、GNU 拡張の入った <code class="highlighter-rouge">date</code> command が必要だった。
+    <ul>
+      <li><code class="highlighter-rouge">brew install coreutils</code> してやると <code class="highlighter-rouge">g</code> の prefix 付きで install される。つまり <code class="highlighter-rouge">date</code> は <code class="highlighter-rouge">gdate</code> 。</li>
+      <li>参考: <a href="https://qiita.com/niwasawa/items/9502e97b6c4d28d24042" title="Qiita - qiita.com">date コマンドで日時のミリ秒単位まで表示する</a></li>
+    </ul>
+  </li>
+  <li>今となっては、何故 Jekyll の出力を普通に pipe で渡していないのか判らない。今試してみると pipe で渡しても普通に動くし…。恐らく最初は lap_time を loop 毎に加算していく作りにしたかったんじゃないかな。その時に変数の値がうまく共有されずに pipe 以外の渡し方を探ったのではないか。
+    <ul>
+      <li>参考: <a href="https://qiita.com/kawaz/items/6fd4cd86ca98af644a05" title="Qiita - qiita.com">パイプ出力を現在のシェル上のwhileに喰わせる上手いやり方</a></li>
+    </ul>
+  </li>
+  <li>参考: <a href="https://qiita.com/DQNEO/items/1d4584b538cd662dfaf6" title="Qiita - qiita.com">printfで右詰め左詰め</a></li>
+  <li>参考: <a href="https://orebibou.com/2017/08/%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E4%B8%8A%E3%81%A7%E5%9B%9E%E6%95%B0%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%97/" title="俺的備忘録 〜なんかいろいろ〜 - orebibou.com">コンソール上で回数を指定して文字列を繰り返し出力(リピート)させる</a></li>
+  <li>参考: <a href="https://orebibou.com/2016/11/sed%E3%81%A7%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E7%BD%AE%E6%8F%9B%E3%82%92%E8%A1%8C%E3%81%86/" title="俺的備忘録 〜なんかいろいろ〜 - orebibou.com">sedでユニコードを指定して置換を行う</a></li>
+</ul>
+
+<h3 id="script-for-before">Script for before</h3>
+
+<p>Docker で動かす場合の script 。</p>
+
+<figure class="highlight"><pre><code class="language-terminal" data-lang="terminal"><span class="gp">printf "\n\n\n%0*d before %0*d\n\n" 17 0 17 0 | sed "s/0/$</span><span class="o">(</span><span class="nb">echo</span> <span class="nt">-ne</span> <span class="s1">'\U1F422'</span><span class="o">)</span>/g<span class="s2">" </span><span class="se">\</span><span class="s2">
+&amp;&amp; START_TIME=</span><span class="si">$(</span>gdate +%s.%3N<span class="si">)</span><span class="s2"> </span><span class="se">\</span><span class="s2">
+&amp;&amp; while IFS= read line; do
+</span><span class="gp">  lap_time=$</span><span class="s2">((</span><span class="si">$(</span>gdate +%s.%3N<span class="si">)</span><span class="s2">-</span><span class="nv">$START_TIME</span><span class="s2">))
+</span><span class="gp">  line=$</span><span class="s2">(echo </span><span class="nv">$line</span><span class="s2"> | tr -d "</span><span class="se">\r</span><span class="s2">")
+</span><span class="gp">  printf "%-68s \e[33m%07.3f\e[m" $</span><span class="s2">line </span><span class="nv">$lap_time</span><span class="s2">
+</span><span class="go">done &lt; &lt;(docker-compose run --rm -w /var/jekyll/regrets --service-ports jekyll bundle exec jekyll serve --port 8496 --livereload_port 8497 --host 0.0.0.0 --drafts --livereload)</span></code></pre></figure>
+
+<p>これがもう本当に大変で。</p>
+
+<ul>
+  <li>Docker を使わない場合と同様の script で、lap_time を左寄せから右寄せに変えるだけだろ、と思ったのだけど、Docker 経由で流れてくる文字列をどうしても思い通りに format 出来なくて、めちゃくちゃ悩んだ。
+    <ul>
+      <li>もうあまり覚えていないし、再度検証するのもうんざりなのでしないのだけど、結果的に Docker からの文字列にはどうも carriage return が付いてるっぽいっということが判り、それを削除してやることで何とか思い通りに表示させられたのだと思う。</li>
+      <li>本当はこれでも駄目で、これ、実はまったく改行されておらず、単に折り返しているだけ。terminal の幅を変えると表示が崩れる。cr を lf に変換してやれば良かったのかなぁ。でもそんなの試したと思うんだよな…。</li>
+    </ul>
+  </li>
+  <li>結果の画像には <code class="highlighter-rouge">formatted_lap_time=$(printf "%0.3f" $lap_time)</code> という debug 時の残骸が残ってしまっているが気にしない。</li>
+</ul>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Let+Jekyll+break+out+of+Docker%20-%20https://regrets.cloudeleven.space/posts/2020/01/08/let-jekyll-break-out-of-docker%20by%20@_cloudeleven_" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://regrets.cloudeleven.space/posts/2020/01/08/let-jekyll-break-out-of-docker" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+          </div>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://regrets.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    &copy; 2019 cloudeleven.
+    Powered by
+    <a href="https://jekyllrb.com/" rel="noreferrer noopener" target="_blank" title="Jekyll">Jekyll</a> and <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Chalk">Chalk</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127518451-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127518451-1');
+  </script>
+
+
+<script integrity="sha256-20hJsLGuzNZXbYFyN65CU8Wlpfl4d/h58lUuyaZpd3U=" crossorigin="anonymous" src="/assets/vendor-db4849b0b1aeccd6576d817237ae4253c5a5a5f97877f879f2552ec9a6697775.js" type="text/javascript"></script>
+
+
+  <script integrity="sha256-zX6uZyZbzRAdD1mEVrFhcbJTPXFNzDpbbdrP3yNMTLw=" crossorigin="anonymous" src="/assets/webfonts-cd7eae67265bcd101d0f598456b16171b2533d714dcc3a5b6ddacfdf234c4cbc.js" type="text/javascript"></script>
+
+
+
+  <script integrity="sha256-dpHzfpFUx9U/dRWlGNuw+vOnPZs9W3VSKGehNJUtCnY=" crossorigin="anonymous" src="/assets/scrollappear-7691f37e9154c7d53f7515a518dbb0faf3a73d9b3d5b75522867a134952d0a76.js" type="text/javascript"></script>
+
+
+<script integrity="sha256-e2Jg3rmOZKikK5f1wYrSqMlQfXD5oJekQLNUdw+Xncc=" crossorigin="anonymous" src="/assets/application-7b6260deb98e64a8a42b97f5c18ad2a8c9507d70f9a097a440b354770f979dc7.js" type="text/javascript"></script>
+
+
+</body>
+</html>
