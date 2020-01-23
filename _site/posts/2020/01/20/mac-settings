@@ -1,0 +1,1486 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>follow me, regrets | 128 settings required minimumly to start using a new mac.</title>
+  <meta name="description" content="新しい mac を使い始めるための最低限の設定 128 。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="128 settings required minimumly to start using a new mac.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://regrets.cloudeleven.space/posts/2020/01/20/mac-settings">
+  <meta property="og:description" content="新しい mac を使い始めるための最低限の設定 128 。">
+  <meta property="og:site_name" content="follow me, regrets">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://regrets.cloudeleven.space/posts/2020/01/20/mac-settings">
+  <meta name="twitter:title" content="128 settings required minimumly to start using a new mac.">
+  <meta name="twitter:description" content="新しい mac を使い始めるための最低限の設定 128 。">
+
+  
+    
+      <meta property="og:image" content="https://regrets.cloudeleven.space/assets/documentation/chalk-docker-before-after-474608756290472d47f5c8b3e72d2498a1da5df59cccf2e8deef9d3853abd47d.png">
+      <meta name="twitter:image" content="https://regrets.cloudeleven.space/assets/documentation/chalk-docker-before-after-474608756290472d47f5c8b3e72d2498a1da5df59cccf2e8deef9d3853abd47d.png">
+    
+  
+
+  <link href="https://regrets.cloudeleven.space/feed.xml" type="application/rss+xml" rel="alternate" title="follow me, regrets Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-light-d8b6c4e8f03e28e8c608d251894a181b4dc76ae167efda475e70336230e984e9.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-light-185e8a7c1ed7f3a28310c4628cda3f1fab5316eade2941ddcb0f4c8ffd7b87ec.png">
+      <link rel="stylesheet" type="text/css" integrity="sha256-kvLUihBAdNVCMj7JxtqhaXVbW2n27IycHGb5ypwwpD0=" crossorigin="anonymous" href="/assets/light-92f2d48a104074d542323ec9c6daa169755b5b69f6ec8c9c1c66f9ca9c30a43d.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="follow me, regrets">follow me, regrets</a>
+  <ul class="header-links">
+    
+    
+      <li>
+        <a href="https://twitter.com/_cloudeleven_" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/cloudeleven" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>128 settings required minimumly to start using a new mac.</h1>
+            <p>新しい mac を使い始めるための最低限の設定 128 。</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    January 20, 2020
+  </span>
+    
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+      
+      <a href="/tag/mac" title="See all posts with tag ''"></a>
+    
+  </div>
+</div>
+          </header>
+
+          <div class="article-content">
+            <p>後述するけど、とにかく全員、人前で使う可能性のある mac では最低限、key repeat を最速に、repeat までの時間を最短にしていただきたい。それだけ判っていただいたら後は自由に立ち去っていただいて結構です。</p>
+
+<p><a href="/assets/documentation/mac-keyboard-settings@2x-0daa4f8f5a54f1bb25bbbe853e0460220f66531e95a3a9e46ba92f8609aaf85c.png">
+  <img src="/assets/documentation/mac-keyboard-settings-333c411e4d1b07575394bc97d7d68d4204feb19a12ef2375385630f4af271bda.png" alt="key repeat setting" class="zooming" data-rjs="/assets/documentation/mac-keyboard-settings@2x-0daa4f8f5a54f1bb25bbbe853e0460220f66531e95a3a9e46ba92f8609aaf85c.png" data-zooming-width="1336" data-zooming-height="377">
+</a></p>
+
+<h4 class="no_toc" id="table-of-contents">Table of Contents</h4>
+
+<ul id="markdown-toc">
+  <li>
+<a href="#preface" id="markdown-toc-preface">Preface</a>    <ul>
+      <li><a href="#environment" id="markdown-toc-environment">Environment</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#minimum-settings" id="markdown-toc-minimum-settings">Minimum Settings</a>    <ul>
+      <li>
+<a href="#system-preferences" id="markdown-toc-system-preferences">System Preferences</a>        <ul>
+          <li><a href="#system-preferences--menu-view-" id="markdown-toc-system-preferences--menu-view-">System Preferences &gt; menu ‘View’ &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#trackpad" id="markdown-toc-trackpad">Trackpad</a>        <ul>
+          <li><a href="#system-preferences--trackpad--point--click-" id="markdown-toc-system-preferences--trackpad--point--click-">System Preferences &gt; Trackpad &gt; Point &amp; Click &gt;</a></li>
+          <li><a href="#accessibility--pointer-control--mouse--trackpad--trackpad-options-" id="markdown-toc-accessibility--pointer-control--mouse--trackpad--trackpad-options-">Accessibility &gt; Pointer Control &gt; Mouse &amp; Trackpad &gt; Trackpad Options… &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#keyboard" id="markdown-toc-keyboard">Keyboard</a>        <ul>
+          <li>
+<a href="#system-preferences--keyboard-" id="markdown-toc-system-preferences--keyboard-">System Preferences &gt; Keyboard &gt;</a>            <ul>
+              <li><a href="#keyboard-" id="markdown-toc-keyboard-">Keyboard &gt;</a></li>
+              <li><a href="#text-" id="markdown-toc-text-">Text &gt;</a></li>
+              <li><a href="#shortcuts-" id="markdown-toc-shortcuts-">Shortcuts &gt;</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+<a href="#host-name" id="markdown-toc-host-name">Host Name</a>        <ul>
+          <li><a href="#system-preferences--sharing-" id="markdown-toc-system-preferences--sharing-">System Preferences &gt; Sharing &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#lock" id="markdown-toc-lock">Lock</a>        <ul>
+          <li><a href="#system-preferences--security--privacy--general-" id="markdown-toc-system-preferences--security--privacy--general-">System Preferences &gt; Security &amp; Privacy &gt; General &gt;</a></li>
+          <li><a href="#system-preferences--desktop--screen-saver--screen-saver-" id="markdown-toc-system-preferences--desktop--screen-saver--screen-saver-">System Preferences &gt; Desktop &amp; Screen Saver &gt; Screen Saver &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#local-account" id="markdown-toc-local-account">Local Account</a>        <ul>
+          <li><a href="#system-preferences--users--groups-" id="markdown-toc-system-preferences--users--groups-">System Preferences &gt; Users &amp; Groups &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#launcher" id="markdown-toc-launcher">Launcher</a>        <ul>
+          <li><a href="#spotlight--search-results-" id="markdown-toc-spotlight--search-results-">Spotlight &gt; Search Results &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#dock" id="markdown-toc-dock">Dock</a>        <ul>
+          <li><a href="#remove-all-application-from-dock" id="markdown-toc-remove-all-application-from-dock">Remove ALL application from Dock</a></li>
+          <li><a href="#system-preferences--dock-" id="markdown-toc-system-preferences--dock-">System Preferences &gt; Dock &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#others-of-system-preferences" id="markdown-toc-others-of-system-preferences">Others of System Preferences</a>        <ul>
+          <li><a href="#system-preferences--date--time--clock-" id="markdown-toc-system-preferences--date--time--clock-">System Preferences &gt; Date &amp; Time &gt; Clock &gt;</a></li>
+          <li><a href="#system-preferences--sound-" id="markdown-toc-system-preferences--sound-">System Preferences &gt; Sound &gt;</a></li>
+          <li>
+<a href="#system-preferences--apple-id-" id="markdown-toc-system-preferences--apple-id-">System Preferences &gt; Apple ID &gt;</a>            <ul>
+              <li><a href="#icloud-" id="markdown-toc-icloud-">iCloud &gt;</a></li>
+              <li><a href="#media--purchases-" id="markdown-toc-media--purchases-">Media &amp; Purchases &gt;</a></li>
+            </ul>
+          </li>
+          <li><a href="#system-preferences--energy-saver-" id="markdown-toc-system-preferences--energy-saver-">System Preferences &gt; Energy Saver &gt;</a></li>
+        </ul>
+      </li>
+      <li><a href="#dictionaryapp" id="markdown-toc-dictionaryapp">Dictionary.app</a></li>
+      <li>
+<a href="#finderapp" id="markdown-toc-finderapp">Finder.app</a>        <ul>
+          <li>
+<a href="#preferences-" id="markdown-toc-preferences-">Preferences… &gt;</a>            <ul>
+              <li><a href="#general-" id="markdown-toc-general-">General &gt;</a></li>
+              <li><a href="#sidebar-" id="markdown-toc-sidebar-">Sidebar &gt;</a></li>
+              <li><a href="#advanced-" id="markdown-toc-advanced-">Advanced &gt;</a></li>
+            </ul>
+          </li>
+          <li><a href="#menu-view-" id="markdown-toc-menu-view-">menu ‘View’ &gt;</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#safariapp" id="markdown-toc-safariapp">Safari.app</a>        <ul>
+          <li>
+<a href="#preferences--1" id="markdown-toc-preferences--1">Preferences &gt;</a>            <ul>
+              <li><a href="#general--1" id="markdown-toc-general--1">General &gt;</a></li>
+              <li><a href="#tabs-" id="markdown-toc-tabs-">Tabs &gt;</a></li>
+              <li><a href="#advanced--1" id="markdown-toc-advanced--1">Advanced &gt;</a></li>
+            </ul>
+          </li>
+          <li><a href="#menu-view--1" id="markdown-toc-menu-view--1">menu ‘View’ &gt;</a></li>
+        </ul>
+      </li>
+      <li><a href="#aquaskk" id="markdown-toc-aquaskk">AquaSKK</a></li>
+      <li><a href="#app-storeapp" id="markdown-toc-app-storeapp">App Store.app</a></li>
+      <li><a href="#enpassapp" id="markdown-toc-enpassapp">Enpass.app</a></li>
+      <li><a href="#delete-unnecessary-apps" id="markdown-toc-delete-unnecessary-apps">Delete unnecessary apps</a></li>
+      <li>
+<a href="#browsers" id="markdown-toc-browsers">Browsers</a>        <ul>
+          <li><a href="#chromeapp" id="markdown-toc-chromeapp">Chrome.app</a></li>
+          <li><a href="#firefox" id="markdown-toc-firefox">Firefox</a></li>
+          <li><a href="#brave" id="markdown-toc-brave">Brave</a></li>
+        </ul>
+      </li>
+      <li><a href="#xcodeapp" id="markdown-toc-xcodeapp">Xcode.app</a></li>
+      <li><a href="#homebrew" id="markdown-toc-homebrew">Homebrew</a></li>
+      <li><a href="#dot-files" id="markdown-toc-dot-files">Dot files</a></li>
+      <li><a href="#terminalapp" id="markdown-toc-terminalapp">Terminal.app</a></li>
+      <li><a href="#change-the-path-of-screen-capture-saved" id="markdown-toc-change-the-path-of-screen-capture-saved">Change the path of Screen Capture saved</a></li>
+      <li><a href="#visual-studio-code" id="markdown-toc-visual-studio-code">Visual Studio Code</a></li>
+      <li>
+<a href="#create-case-sensitive-volume" id="markdown-toc-create-case-sensitive-volume">Create case-sensitive volume</a>        <ul>
+          <li><a href="#volume-%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6-mount" id="markdown-toc-volume-を作って-mount">volume を作って mount</a></li>
+          <li><a href="#%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F-volume-%E3%82%92-mount-%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE-script-%E3%82%92%E7%94%A8%E6%84%8F" id="markdown-toc-作成した-volume-を-mount-するための-script-を用意">作成した volume を mount するための script を用意</a></li>
+          <li><a href="#mac-%E3%81%B8%E3%81%AE-login-%E6%99%82%E3%81%AB%E4%B8%8A%E8%A8%98-script-%E3%82%92%E8%87%AA%E5%8B%95%E7%9A%84%E3%81%AB%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99%E3%81%9F%E3%82%81%E3%81%AE%E6%BA%96%E5%82%99" id="markdown-toc-mac-への-login-時に上記-script-を自動的に呼び出すための準備">mac への login 時に、上記 script を自動的に呼び出すための準備</a></li>
+        </ul>
+      </li>
+      <li><a href="#git" id="markdown-toc-git">git</a></li>
+      <li>
+<a href="#anyenv" id="markdown-toc-anyenv">anyenv</a>        <ul>
+          <li><a href="#install-anyenv" id="markdown-toc-install-anyenv">install anyenv</a></li>
+          <li><a href="#install-rbenv-pyenv-nodenv-jenv" id="markdown-toc-install-rbenv-pyenv-nodenv-jenv">install rbenv, pyenv, nodenv, jenv</a></li>
+        </ul>
+      </li>
+      <li><a href="#witch" id="markdown-toc-witch">Witch</a></li>
+      <li><a href="#android-studio" id="markdown-toc-android-studio">Android Studio</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="#other-settings" id="markdown-toc-other-settings">Other Settings</a>    <ul>
+      <li><a href="#docker-desktop-for-mac" id="markdown-toc-docker-desktop-for-mac">Docker Desktop for Mac</a></li>
+      <li><a href="#virtualbox" id="markdown-toc-virtualbox">VirtualBox</a></li>
+      <li><a href="#adobe-creative-cloud" id="markdown-toc-adobe-creative-cloud">Adobe Creative Cloud</a></li>
+      <li>
+<a href="#media-related" id="markdown-toc-media-related">Media related</a>        <ul>
+          <li><a href="#vlc-media-player" id="markdown-toc-vlc-media-player">VLC media player</a></li>
+          <li><a href="#handbrake" id="markdown-toc-handbrake">HandBrake</a></li>
+        </ul>
+      </li>
+      <li>
+<a href="#optical-disc-related" id="markdown-toc-optical-disc-related">Optical Disc related</a>        <ul>
+          <li>
+<a href="#x-lossless-decoder" id="markdown-toc-x-lossless-decoder">X Lossless Decoder</a>            <ul>
+              <li><a href="#preferences--2" id="markdown-toc-preferences--2">Preferences &gt;</a></li>
+            </ul>
+          </li>
+          <li><a href="#makemkv" id="markdown-toc-makemkv">MakeMKV</a></li>
+          <li><a href="#allow-handbrake-to-read-dvd" id="markdown-toc-allow-handbrake-to-read-dvd">Allow HandBrake to read DVD</a></li>
+          <li>
+<a href="#never-let-disc-play-automatically" id="markdown-toc-never-let-disc-play-automatically">Never Let Disc Play Automatically</a>            <ul>
+              <li><a href="#system-preferences--cds--dvds" id="markdown-toc-system-preferences--cds--dvds">System Preferences &gt; CDs &amp; DVDs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="preface">Preface</h2>
+
+<ul>
+  <li>既存の端末から設定をまるっと引き継ぐようなことはしない。だって、どこが変わったかを知っておきたいし、自分の求めることの変化も知っておきたい。それに何より、新しい mac を買って setup している時間が一番楽しいでしょう?</li>
+  <li>とは言え、新しい mac を setup するのは大抵いつも久々で割と手間取る。設定したいことは頭の中にあるとしても、順番を間違えて同じ画面を何度も行き来する羽目になったり運用を始めてから漏れていた設定に気付いて苛ついたりする羽目になるので手順書が必要。今迄はその手順 memo を自宅内の git で管理していたのだけど、後述するように Terminal.app を使えるようにするまでに済ませておきたい設定も多々あり何かと不便だったので web に置くことにした。</li>
+  <li>基本的に default の設定から変更する必要があるもののみ記載。</li>
+</ul>
+
+<h3 id="environment">Environment</h3>
+<ul>
+  <li>MacBook Pro (16-inch, 2019)</li>
+  <li>macOS Catalina Version 10.15.2</li>
+</ul>
+
+<h2 id="minimum-settings">Minimum Settings</h2>
+
+<p>最低限の設定。</p>
+
+<h3 id="system-preferences">System Preferences</h3>
+
+<p>setup 中は <code class="highlighter-rouge">System Preferences.app</code> を頻繁に使うので、最初に使いやすくしておく。</p>
+
+<h4 id="system-preferences--menu-view-">System Preferences &gt; menu ‘View’ &gt;</h4>
+
+<ul>
+  <li>check <code class="highlighter-rouge">Organize Alphabetically</code>
+    <ul>
+      <li>Catalina になったらますます探せなくなったので。検索窓で incremental に絞り込めるのは素晴らしいけど、typing せずに済ませたい時もあるわけで。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="trackpad">Trackpad</h3>
+
+<p>まず入力系を使えるようにしておかないとずっと苛々するゆえ。</p>
+
+<h4 id="system-preferences--trackpad--point--click-">System Preferences &gt; Trackpad &gt; Point &amp; Click &gt;</h4>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Look up &amp; data detectors</code> を <code class="highlighter-rouge">Tap with three fingers</code> に。
+    <ul>
+      <li>辞書を引く手間は少なければ少ないほど良い。</li>
+    </ul>
+  </li>
+  <li>Check <code class="highlighter-rouge">Tap to click</code>
+    <ul>
+      <li>trackpad が tap に反応するようにする。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+      <li>最近の MacBook の trackpad は click もかなり軽いけど、それでも tap の方が楽。押し込むのは疲れる。文字入力中に意図せず trackpad が反応するということももう何年も経験していないので、これを設定しない理由がない。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="accessibility--pointer-control--mouse--trackpad--trackpad-options-">Accessibility &gt; Pointer Control &gt; Mouse &amp; Trackpad &gt; Trackpad Options… &gt;</h4>
+<ul>
+  <li>check <code class="highlighter-rouge">Enable dragging</code> and select <code class="highlighter-rouge">three finger drag</code>
+    <ul>
+      <li>3 本指 drag で window を移動出来るように。とにかく trackpad を押し込みたくないんです。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="keyboard">Keyboard</h3>
+
+<p>まず入力系を</p>
+
+<h4 id="system-preferences--keyboard-">System Preferences &gt; Keyboard &gt;</h4>
+
+<h5 id="keyboard-">Keyboard &gt;</h5>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Key Repeat</code> を最速に。
+    <ul>
+      <li>あらゆる application が、例えば “cursor から行頭までの文字列を削除” の shortcut key を提供していて、我々がそれらをすべて覚えられるなら必要ないが、世の中も我々もそうなっていないのだから、backspace を押しっ放しにしなければならない時が必ずくる。設定しておくしかない。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Delay Until Repeat</code> を最短に。
+    <ul>
+      <li>同上。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+    </ul>
+  </li>
+  <li>check <code class="highlighter-rouge">Turn keyboard backlight off after 5 secs of inactivity</code>
+    <ul>
+      <li>ここは好みで。</li>
+    </ul>
+  </li>
+  <li>check <code class="highlighter-rouge">Use F1, F2, etc. keys as standard function keys</code>
+    <ul>
+      <li>俺は Touch Bar を基本的に default の設定で使っているので、この設定は実質 Touch Bar のない keyboard 使う場合の設定。</li>
+      <li>ただ、この設定は未だに悩んでいて…。Touch Bar のある keyboard を使う時は Fn を押した時に Touch Bar に F1 ~ が現われるように設定しているのだけど、それだと Touch Bar のある keyboard で使う時と Touch Bar の無い keyboard で使う時とで F1 ~ を押すための操作が違ってしまっているので、間違えることがある…。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Modifier Keys...</code> &gt;
+    <ul>
+      <li>
+<code class="highlighter-rouge">Caps Lock Key:</code> を <code class="highlighter-rouge">Control</code> に。
+        <ul>
+          <li>入れ替えるんじゃない。どちらも Control にする。Caps Lock Key などこの世に必要ない。憎い。この世のすべての keyboard から Caps Lock が無くなれば良いのに。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="text-">Text &gt;</h5>
+
+<ul>
+  <li>uncheck <code class="highlighter-rouge">Correct spelling automatically</code>
+    <ul>
+      <li>とにかく余計なことはしてほしくない。</li>
+    </ul>
+  </li>
+  <li>uncheck <code class="highlighter-rouge">Capitalize words automatically</code>
+    <ul>
+      <li>とにかく余計なことは</li>
+    </ul>
+  </li>
+  <li>uncheck <code class="highlighter-rouge">Add period with double-space</code>
+    <ul>
+      <li>とに</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Spelling</code> &gt;
+    <ul>
+      <li>選択肢から <code class="highlighter-rouge">Set Up...</code> を選択し、使わない言語を残してすべて uncheck 。
+        <ul>
+          <li>これ、記憶は曖昧だけど、昔は spell check を無効にしても何故か赤い波線が表示されてしまうことがあった気がして、これをしたらそれを解消できた気がするんだけど、もしかしたらしなくても良かったのかも知れない。あるいは今はしなくても良くなったかも知れない。確認はしない。</li>
+          <li>使わない言語の check を残すのは、すべての check を外すことが出来ないから。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="shortcuts-">Shortcuts &gt;</h5>
+<ul>
+  <li>Input Sources &gt;
+    <ul>
+      <li>check <code class="highlighter-rouge">Select the previous input source</code>
+</li>
+      <li>check <code class="highlighter-rouge">Select next source in Input menu</code>
+</li>
+    </ul>
+  </li>
+  <li>check <code class="highlighter-rouge">Use keyboard navigation to move focus between controls</code>
+    <ul>
+      <li>Tab key による focus 移動をあらゆる control 要素間で可能にする。これをしないと移動出来る要素が限られる。特に button 要素へ focus を移せないのは本当に困るので設定するしかない。超重要<img class="emoji" title=":bangbang:" alt=":bangbang:" src="https://github.githubassets.com/images/icons/emoji/unicode/203c.png" height="20" width="20">
+</li>
+      <li>これ、Mojave までは <code class="highlighter-rouge">Ful Keyboard Access: In windows and dialogs, press Tab to move keyboard focus between:</code> という項目で選択肢は <code class="highlighter-rouge">Text boxes and lists only</code> (こちらが default) と <code class="highlighter-rouge">All controls</code> だった。これを <code class="highlighter-rouge">All controls</code> に設定していたのだけど、現状この項目に check を入れることがまったく同じ結果をもたらすのかどうかは判らない。でも入れるしかないよ。そうしないと button に focus を移せないんだから。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="host-name">Host Name</h3>
+
+<h4 id="system-preferences--sharing-">System Preferences &gt; Sharing &gt;</h4>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Computer Name:</code> を任意の名前に。
+    <ul>
+      <li>これ、後からゆっくりやっても良いのだろうけど、default の host name は自分の名前を元に勝手に付けられてしまうのでださい以上に気持ち悪すぎるし、それが Terminal.app を立ち上げたときに prompt に現れたり、Bonjour で local network に advertise されたりして気持ち悪いので早めに済ませたい。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="lock">Lock</h3>
+
+<p>画面と睨めっこしながら長考していたり、pointer 操作を誤って screen saver が発動してしまった時にそれを cancel するために 5 秒の猶予が欲しい。</p>
+
+<h4 id="system-preferences--security--privacy--general-">System Preferences &gt; Security &amp; Privacy &gt; General &gt;</h4>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Require password</code> を <code class="highlighter-rouge">5 seconds</code> に。
+    <ul>
+      <li>Mac mini 等、外に持ち出すことのない端末ではもう少し長めにしている。Touch ID なくて面倒だし。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="system-preferences--desktop--screen-saver--screen-saver-">System Preferences &gt; Desktop &amp; Screen Saver &gt; Screen Saver &gt;</h4>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Start after</code> を <code class="highlighter-rouge">5 Minutes</code> に。</li>
+  <li>check <code class="highlighter-rouge">Show with clock</code>
+</li>
+  <li>
+<code class="highlighter-rouge">Hot Corners...</code>
+    <ul>
+      <li>右上を <code class="highlighter-rouge">Start Screen Saver</code> に。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="local-account">Local Account</h3>
+
+<h4 id="system-preferences--users--groups-">System Preferences &gt; Users &amp; Groups &gt;</h4>
+
+<ul>
+  <li>icon 画像部分に設定したい画像を drag &amp; drop 。
+    <ul>
+      <li>これ、どうでも良いのだけどやっておかないと AirDrop を使う時にがっかりするので。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="launcher">Launcher</h3>
+
+<p>Spotlight を launcher として使う。Spotlight 最高。</p>
+
+<h4 id="spotlight--search-results-">Spotlight &gt; Search Results &gt;</h4>
+<p>次のもののみ check を残して他をすべて uncheck 。重要<img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png" height="20" width="20"></p>
+
+<ul>
+  <li>Applications
+    <ul>
+      <li>launcher として使うのはこれが肝。</li>
+    </ul>
+  </li>
+  <li>Calculator
+    <ul>
+      <li>簡単な計算なら Calculator.app を立ち上げるまでもない。</li>
+    </ul>
+  </li>
+  <li>Conversion
+    <ul>
+      <li>単位変換。うまく行けば google を開かずに済む。</li>
+    </ul>
+  </li>
+  <li>Definition
+    <ul>
+      <li>辞書。どの辞書を使うかは Dictionary.app で設定する。後述。</li>
+    </ul>
+  </li>
+  <li>Documents
+    <ul>
+      <li>File を探すのはほぼ Finder.app か Terminal.app でするし、要らないかも。やめようかな。text file の中身を Spotlight 内で preview 出来ることだけがたまに嬉しいんだよなぁ。</li>
+    </ul>
+  </li>
+  <li>Folders
+    <ul>
+      <li>同上。</li>
+    </ul>
+  </li>
+  <li>Spotlight Suggestions
+    <ul>
+      <li>これ、あんまり良い提案してこないからやめるかも。というか俺が基本的に欲しいものを明確に入力するので意味がない。</li>
+    </ul>
+  </li>
+  <li>System Preferences
+    <ul>
+      <li>System Preferences の個々の項目に直接行きたい。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="dock">Dock</h3>
+
+<p>launcher としては使わないので不要なものはすべて削除。Dock 自体も隠す。</p>
+
+<h4 id="remove-all-application-from-dock">Remove ALL application from Dock</h4>
+
+<ul>
+  <li>Dock 上のすべての application icon 上で context menu を表示し <code class="highlighter-rouge">Options</code> &gt; <code class="highlighter-rouge">Remove from Dock</code> 。あるいは icon を Trash に drag 。
+    <ul>
+      <li>application を何も起動していない時はこうあるべき。Finder はたぶん消せないよね。Downloads は消せるけど割と便利なので。
+<a href="/assets/documentation/mac-settings-dock@2x-bb08142cd958bc0d144015575018fa56487febfe9f79dfb6cde4e1c4ec6cedaa.png">
+<img src="/assets/documentation/mac-settings-dock-5d825e2d56a4af893e8964cb17ecda25c41cdb874cf165837003e7ee5ba5cfa0.png" alt="Dock" class="zooming" data-rjs="/assets/documentation/mac-settings-dock@2x-bb08142cd958bc0d144015575018fa56487febfe9f79dfb6cde4e1c4ec6cedaa.png" data-zooming-width="250" data-zooming-height="589">
+</a>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="system-preferences--dock-">System Preferences &gt; Dock &gt;</h4>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Position on screen</code> を <code class="highlighter-rouge">Left</code> に。
+    <ul>
+      <li>左か右かの二択だけど、俺は右端に Terminal.app を配置するし、右上で screen saver が起動するようにしているので左。下にしておくと何か不便なことがあったと思うんだけど忘れた。</li>
+    </ul>
+  </li>
+  <li>check <code class="highlighter-rouge">Automatically hide and show the Dock</code>
+    <ul>
+      <li>滅茶苦茶大きい display で使っているなら出しっぱなしでも良いのかも知れないけど、出しておいたところでたいして意味ないので隠すが吉。俺は 43 inch の display に繋いでいる Mac mini でも隠してる。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="others-of-system-preferences">Others of System Preferences</h3>
+
+<p>その他 System Preferences でやっておくこと。</p>
+
+<h4 id="system-preferences--date--time--clock-">System Preferences &gt; Date &amp; Time &gt; Clock &gt;</h4>
+
+<p>これ、default がどうなっていたか忘れてしまったんだけど結果として次のようになっていれば良い。</p>
+
+<ul>
+  <li>check <code class="highlighter-rouge">Show date and time in menu bar</code>
+</li>
+  <li>check <code class="highlighter-rouge">Use a 24-hour clock</code>
+</li>
+  <li>check <code class="highlighter-rouge">Show date</code> of <code class="highlighter-rouge">Date Options</code>
+</li>
+</ul>
+
+<h4 id="system-preferences--sound-">System Preferences &gt; Sound &gt;</h4>
+<ul>
+  <li>check <code class="highlighter-rouge">Show volume in menu bar</code>
+    <ul>
+      <li>ここから音量調節したいというよりは、今 mute されているかどうかを一瞥で確認したいことが多々ある。あと speaker と headphone を切り替えたり。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="system-preferences--apple-id-">System Preferences &gt; Apple ID &gt;</h4>
+
+<p>左上に表示されている sign in 済みの account が iCloud 用として望み通りのものであるかどうかをまず確認。App Store などで支払いの為に使う account と iCloud の account を分けている場合は特に注意。期待と違った場合は <code class="highlighter-rouge">Overview</code> &gt; <code class="highlighter-rouge">Sign Out...</code> してから <code class="highlighter-rouge">Sign In</code> し直す。</p>
+
+<h5 id="icloud-">iCloud &gt;</h5>
+<p>次のものだけが check されている状態にする。依存すると Android で困るようなものは使わない。使えない。</p>
+<ul>
+  <li><code class="highlighter-rouge">Safari</code></li>
+  <li><code class="highlighter-rouge">Notes</code></li>
+  <li><code class="highlighter-rouge">Siri</code></li>
+  <li><code class="highlighter-rouge">Keychain</code></li>
+  <li><code class="highlighter-rouge">Find My Mac</code></li>
+  <li><code class="highlighter-rouge">Home</code></li>
+</ul>
+
+<h5 id="media--purchases-">Media &amp; Purchases &gt;</h5>
+
+<p>購入用として望み通りの account で sign in されているかを確認。期待と違った場合は (<code class="highlighter-rouge">Manage...</code> button から行っても良いんだろうけど) 、App Store.app を立ち上げて menu の <code class="highlighter-rouge">Store</code> から一度 <code class="highlighter-rouge">Sign Out</code> して再度 <code class="highlighter-rouge">Sign in</code> 。</p>
+
+<ul>
+  <li>check <code class="highlighter-rouge">Use Touch ID for Purchases</code>
+</li>
+</ul>
+
+<h4 id="system-preferences--energy-saver-">System Preferences &gt; Energy Saver &gt;</h4>
+<p>MacBook の場合のみ</p>
+<ul>
+  <li>check <code class="highlighter-rouge">Show battery status in menu bar</code>
+</li>
+  <li>menu bar に表示された battery icon を tap して <code class="highlighter-rouge">Show Percentage</code> を選択。</li>
+</ul>
+
+<h3 id="dictionaryapp">Dictionary.app</h3>
+
+<p>ここでの設定が Spotlight での Definition にも共有される。</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Preferences</code> で必要な辞書だけに check 。俺の場合は以下のみ。
+    <ul>
+      <li>New Oxford American Dictionary (American English)</li>
+      <li>スーパー大辞林 (Japanese)</li>
+      <li>ウィズダム英和辞典/ウィズダム和英辞典 (Japanese-English)</li>
+    </ul>
+  </li>
+  <li>ちなみに、特定の環境では、特定の辞書が使えない問題があるようで、俺の端末でも再現していた。comment や追記を併せて読むと判るように、download して展開して rename して配置してやったら取り敢えずは使えるなる。けど、Spotlight では出てきてくれない…。
+    <ul>
+      <li><a href="https://qiita.com/mybdesign/items/72a09ccbbb38a3ec72e2">MacBook Pro (16-inch, 2019)で辞書.app（Dictionary.app）の英和/和英辞典が使えなくなった話。</a></li>
+      <li>
+<a href="https://discussions.apple.com/thread/250861549">The macOS dictionary app cannot add new build in dictionaries</a> を読むと、16inch MacBook Pro でばかり起きているっぽいが、端末依存というのは考えにくいので、Catalina が pre-install (あるいは clean install) された端末で起きるということなのかな?</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="finderapp">Finder.app</h3>
+
+<h4 id="preferences-">Preferences… &gt;</h4>
+<h5 id="general-">General &gt;</h5>
+<ul>
+  <li>
+<code class="highlighter-rouge">Show these items on the desktop</code> の全項目を uncheck 。</li>
+  <li>
+<code class="highlighter-rouge">New Finder windows show</code> を home directory に。</li>
+</ul>
+
+<h5 id="sidebar-">Sidebar &gt;</h5>
+<ul>
+  <li>
+<code class="highlighter-rouge">Favorites</code> 以下の item だけが check されている状態にする
+    <ul>
+      <li><code class="highlighter-rouge">AirDrop</code></li>
+      <li><code class="highlighter-rouge">Applications</code></li>
+      <li><code class="highlighter-rouge">Documents</code></li>
+      <li><code class="highlighter-rouge">Downloads</code></li>
+      <li>home directory</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">iCloud</code> 以下の次の項目を uncheck
+    <ul>
+      <li><code class="highlighter-rouge">iCloud Drive</code></li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Locations</code> 以下の全項目を check</li>
+</ul>
+
+<h5 id="advanced-">Advanced &gt;</h5>
+<ul>
+  <li>check <code class="highlighter-rouge">Show all filename extensions</code>
+    <ul>
+      <li>拡張子を見せない設定が default なのはまじで意味が解らない。重要<img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2757.png" height="20" width="20">
+</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">When performing a search</code> を <code class="highlighter-rouge">Search the Current Folder</code> に。</li>
+</ul>
+
+<h4 id="menu-view-">menu ‘View’ &gt;</h4>
+<ul>
+  <li>
+<code class="highlighter-rouge">Show Status Bar</code> を選択、あるいは <code class="highlighter-rouge">⌘+/</code> で status bar を表示。
+    <ul>
+      <li>これが default じゃない意味が解r</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="safariapp">Safari.app</h3>
+<h4 id="preferences--1">Preferences &gt;</h4>
+<h5 id="general--1">General &gt;</h5>
+<ul>
+  <li>
+<code class="highlighter-rouge">Safari opens with</code> を <code class="highlighter-rouge">All windows from last session</code> に。</li>
+  <li>uncheck <code class="highlighter-rouge">Open "safe" files after downloading</code>
+    <h5 id="tabs-">Tabs &gt;</h5>
+  </li>
+  <li>
+<code class="highlighter-rouge">Open pages in tabs instead of windows</code> を <code class="highlighter-rouge">Always</code> に</li>
+  <li>check <code class="highlighter-rouge">When a new tab or window opens, make it active</code>
+</li>
+  <li>check <code class="highlighter-rouge">Show website icons in tabs</code>
+    <h5 id="advanced--1">Advanced &gt;</h5>
+  </li>
+  <li>check <code class="highlighter-rouge">Show full website address</code>
+</li>
+  <li>check <code class="highlighter-rouge">Show Develop menu in menu bar</code>
+</li>
+</ul>
+
+<h4 id="menu-view--1">menu ‘View’ &gt;</h4>
+<ul>
+  <li>
+<code class="highlighter-rouge">Show Status Bar</code> を選択、あるいは <code class="highlighter-rouge">⌘+/</code> で status bar を表示。
+    <ul>
+      <li>これが default じゃn</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="aquaskk">AquaSKK</h3>
+<p>この世のあらゆる連文節変換 input method は使い物にならないので mac で動く <a href="https://ja.wikipedia.org/wiki/SKK">SKK</a> 実装であるところの <a href="https://github.com/codefirst/aquaskk">AquaSKK</a> を使うしかない。</p>
+
+<p>install の最後で logout (= 全 application 終了) を要求されるので、止められたら困る application は予め終わらせておく。</p>
+
+<ul>
+  <li>https://github.com/codefirst/aquaskk/releases から最新を install</li>
+  <li>
+<code class="highlighter-rouge">System preferences</code> &gt; <code class="highlighter-rouge">Keyboard</code> &gt; <code class="highlighter-rouge">Input Sources</code> で <code class="highlighter-rouge">+</code> を tap し、<code class="highlighter-rouge">English</code> から AquaSKK の <code class="highlighter-rouge">ASCII</code> を、Japanese から AquaSKK の <code class="highlighter-rouge">カタカナ</code>, <code class="highlighter-rouge">ひらかな</code>, <code class="highlighter-rouge">全角英数</code> を追加。</li>
+  <li>どの timing で出来るようになるか判らないけど、既存の <code class="highlighter-rouge">ABC</code> も消せるようなら消す。一生使わないし邪魔なので。でももしかしたら今は消せないのかも知れない…。</li>
+  <li>user 辞書の設定。既存の辞書がある場合のみ。AquaSKK は望みの変換を簡単に登録出来るのでそこまで重要じゃないけど、俺の場合は default 状態で自分の名前を変換するのが異様に面倒なので。
+    <ol>
+      <li>他の端末から user 辞書を持ってきて任意の場所に配置。</li>
+      <li>menu bar の AquaSKK icon &gt; <code class="highlighter-rouge">環境設定</code> &gt; <code class="highlighter-rouge">辞書</code> &gt; <code class="highlighter-rouge">ユーザー辞書</code> &gt; で path を set 。
+        <ul>
+          <li>ただしこれには罠があって、<code class="highlighter-rouge">変更...</code> button から file を選択すると <code class="highlighter-rouge">file:/</code> から始まる path が入力されるのだけど、これだと読んでくれないようなので、file:/ を削除。</li>
+        </ul>
+        <ul>
+          <li>参考: <a href="https://shammerism.hatenadiary.com/entry/20141023/p1">AquaSKK で辞書が保存できなかった理由</a>
+</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>menu bar の AquaSKK icon &gt; <code class="highlighter-rouge">環境設定</code> &gt; <code class="highlighter-rouge">互換性</code> &gt;
+    <ul>
+      <li>
+<code class="highlighter-rouge">com.google.android.studio</code> を追加し、全 check 。
+        <ul>
+          <li>Android Studio を使う端末の場合のみ。</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">jp.naver.line.mac</code> を追加し、<code class="highlighter-rouge">露払後確定</code> のみ check 。
+        <ul>
+          <li>もちろん line を使う端末の場合のみ。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="app-storeapp">App Store.app</h3>
+
+<ul>
+  <li>とりあえず update 出来るものは update 。</li>
+  <li>続いて必要なものを install 。
+    <ul>
+      <li>まずは setup の途中で必要になる以下を install してしまう。
+        <ul>
+          <li>
+<a href="https://apps.apple.com/jp/app/xcode/id497799835?l=en&amp;mt=12">Xcode</a>
+            <ul>
+              <li>開発する端末なら。</li>
+            </ul>
+          </li>
+          <li>
+<a href="https://apps.apple.com/jp/app/enpass-password-manager/id732710998?l=en&amp;mt=12">Enpass</a>
+            <ul>
+              <li>password manager 。昔は 1Password を使っていたのだけど、(少なくとも当時は) local network 内で各端末を同期させるには export した file をやりとりするしか手段がなくて、暗号化されているとは言え password が詰まった file を internet 上の Dropbox や iCloud 等に置く気になれないため mac 4 台と iPhone, iPad, Android を運用している身には同期が恐しく面倒な割に、version up の度に金を取られる気がしてうんざりしたので乗り換えた。今は家の中の webdav を介して同期している。超便利。</li>
+            </ul>
+          </li>
+          <li>
+<a href="https://apps.apple.com/jp/app/the-unarchiver/id425424353?l=en&amp;mt=12">The Unarchiver</a>
+            <ul>
+              <li>いつも新しい端末を setup する時には “もう RAR とか 7-Zip とか download することもないし要らないだろ” と思うのだけど、使っていくうちに結局必要になって入れることになる。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>以下は端末の用途次第で任意の timing で install 。
+        <ul>
+          <li><a href="https://apps.apple.com/jp/app/bluetooth-midi-connect/id1074606480?l=en&amp;mt=12">Bluetooth MIDI Connect</a></li>
+          <li><a href="https://apps.apple.com/jp/app/kindle/id405399194?l=en&amp;mt=12">Kindle</a></li>
+          <li>
+<a href="https://apps.apple.com/jp/app/vox-mp3-flac-music-player/id461369673?l=en&amp;mt=12">VOX</a>
+            <ul>
+              <li>音楽 player 。MacBook で音楽を聴くことはほぼ無いのだけど、ripping したり download した音源を確認したい時に便利なので。見栄えも良いし。だけどいつからか有料の機能を subscribe しろとうるさくなったので、他に良いのがあれば乗り換えたい。CD の内容をひとつの file にした flac 音源及び cuesheet/tag を正しく扱える player でなければいけないので探すのが面倒。</li>
+              <li>media server として使っている Mac mini では <a href="https://audirvana.com/">Audirvana</a> の license を買って使っている。</li>
+            </ul>
+          </li>
+          <li>
+<a href="https://apps.apple.com/jp/app/blackmagic-disk-speed-test/id425264550?l=en&amp;mt=12">Blackmagic Disk Speed Test</a>
+            <ul>
+              <li>別にこれじゃなくても良いんだけど、新しい MacBook を買ったら内蔵 SSD の速さを可視化して喜びを倍増させる。</li>
+            </ul>
+          </li>
+          <li>
+<a href="https://apps.apple.com/jp/app/pixelmator/id407963104?l=en&amp;mt=12">Pixelmator</a>
+            <ul>
+              <li>もう入れなくて良いかな。昔は安い Photoshop 代替として良い感じだったのだけど、いつの間にか <a href="https://apps.apple.com/jp/app/pixelmator-pro/id1289583905?l=en&amp;mt=12">Pixelmator Pro</a> とかいうのが出ていて今更 Pro 版じゃないものを使う気にならないし、俺は俺でもう Adobe Creative Cloud の complete plan を subscribe しているからなぁ。でも Adobe CC は複数端末での同時使用は出来ない license だった気がするから、必要が生じれば。</li>
+            </ul>
+          </li>
+          <li>
+<a href="https://apps.apple.com/jp/app/logic-pro-x/id634148309?l=en&amp;mt=12">Logic Pro X</a>
+            <ul>
+              <li>ただでさえ Pro 版としてはかなり安いのに、複数端末で使えるのは本当に有り難い。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+<a href="https://apps.apple.com/jp/app/witch/id412485838?l=en&amp;mt=12">Witch</a> はここでは入れない。App Store には古い version しか無いので、別途 download して install する。後述。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="enpassapp">Enpass.app</h3>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Restore from Cloud</code> から既存の sync 先を設定する。</li>
+  <li>
+<code class="highlighter-rouge">Preferences</code> &gt; <code class="highlighter-rouge">Security</code> &gt;
+    <ul>
+      <li>check <code class="highlighter-rouge">Touch ID</code>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="delete-unnecessary-apps">Delete unnecessary apps</h3>
+<p>端末の用途に応じて以下の app を削除。update がうざい。</p>
+<ul>
+  <li><code class="highlighter-rouge">iMovie.app</code></li>
+  <li><code class="highlighter-rouge">Numbers.app</code></li>
+  <li><code class="highlighter-rouge">Pages.app</code></li>
+  <li><code class="highlighter-rouge">Keynote.app</code></li>
+</ul>
+
+<h3 id="browsers">Browsers</h3>
+
+<h4 id="chromeapp"><a href="https://www.google.com/intl/ja_ALL/chrome/">Chrome.app</a></h4>
+
+<ul>
+  <li>download して install して login 。それで設定も同期されるけど、何らかの都合で同期しない場合でも最低限以下を設定する。
+    <ul>
+      <li>
+<code class="highlighter-rouge">Preferences</code> &gt; <code class="highlighter-rouge">On startup</code> で <code class="highlighter-rouge">Continue where you left off</code> を選択。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="firefox"><a href="https://www.mozilla.org/ja/firefox/new/">Firefox</a></h4>
+
+<ul>
+  <li>download して install して login 。それで設定も同期されるけど、何らかの都合で同期しない場合でも最低限以下を設定する。
+    <ul>
+      <li>
+<code class="highlighter-rouge">Preferences</code> &gt; <code class="highlighter-rouge">一般</code> &gt; <code class="highlighter-rouge">起動</code> で <code class="highlighter-rouge">前回のセッションを復元する</code> を check 。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="brave"><a href="https://brave.com/">Brave</a></h4>
+<ul>
+  <li>download して install 。特に何も設定しない。</li>
+</ul>
+
+<h3 id="xcodeapp">Xcode.app</h3>
+<p>端末の用途によっては必要ないけど、Homebrew の install で一部の component が必要だったりするので、storage 容量がよほど逼迫しているのでない限り入れてしまう。せっかく毎年 license 買っているのだし。</p>
+<ul>
+  <li>初回起動で追加 component の install を迫られるので従う。</li>
+</ul>
+
+<h3 id="homebrew">Homebrew</h3>
+<ul>
+  <li>https://brew.sh/ に従って install 。</li>
+  <li>以下を install
+    <ul>
+      <li>git
+        <ul>
+          <li>mac には pre-install されているけど、段々古くなるので。</li>
+        </ul>
+      </li>
+      <li>
+<a href="https://github.com/tmux/tmux">tmux</a>
+        <ul>
+          <li>少し前までは <a href="https://www.gnu.org/software/screen/">GNU Screen</a> を使っていたのだけど tmux への乗り換えを試行中。ほぼ同じ使い勝手で使えているし、より便利な点もあるので、もう完全に乗り換えても良いかな。ひとつだけまだ慣れないのが copy mode で範囲選択を終えるための key が enter であるところ。screen は space だった。</li>
+        </ul>
+      </li>
+      <li>zsh
+        <ul>
+          <li>pre-install されているし、Catalina からは default にさえなったけど、以前に次の問題に遭遇してからずっと Homebrew で入れたものを使っている。たぶんこの問題は今は直っているんだけど。
+            <ul>
+              <li><a href="https://stackoverflow.com/questions/33817282/auto-completion-not-work-for-command-du">Auto completion not work for command ‘du’</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>rsync
+        <ul>
+          <li>pre-install されているけど、同期中に流れる log で日本語 file 名が化けるので。 
+<a href="/assets/documentation/mac-settings-rsync@2x-a6b2ea734e1ba2ed6149747f6d10ecf3c5d0bb0468f698317726477bd6109b0b.png">
+<img src="/assets/documentation/mac-settings-rsync-cec880732d30392ca3d92b21f50924882996737a04f8e9312371ff91ff269301.png" alt="Dock" class="zooming" data-rjs="/assets/documentation/mac-settings-rsync@2x-a6b2ea734e1ba2ed6149747f6d10ecf3c5d0bb0468f698317726477bd6109b0b.png" data-zooming-width="1444" data-zooming-height="814">
+</a>
+</li>
+        </ul>
+      </li>
+      <li>wget</li>
+      <li>openssl</li>
+      <li>lv
+        <ul>
+          <li>昔からの馴染みで。でももうこれを使う理由って無いのかな?</li>
+        </ul>
+      </li>
+      <li>jq
+        <ul>
+          <li>JSON 返す API を扱っている職場で質問してきた奴の端末にこれが入ってないと「だから何やっても遅えんだよ…」と言いたくなる…。</li>
+        </ul>
+      </li>
+      <li>flac</li>
+      <li>mkvtooknix</li>
+      <li>ffmpeg</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="dot-files">Dot files</h3>
+
+<p>git で管理しているので、次のようにして配置。</p>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">cd</span>
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/cloudeleven/dotfiles.git
+<span class="gp">$</span><span class="w"> </span><span class="nb">cd </span>dotfiles
+<span class="gp">$</span><span class="w"> </span>./link.sh</code></pre></figure>
+
+<h3 id="terminalapp">Terminal.app</h3>
+
+<p>下記は既存端末から設定 profile を export して import するのででも良し。</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Preferences</code> &gt; <code class="highlighter-rouge">Profiles</code> &gt; <code class="highlighter-rouge">Pro</code> を選択状態にして歯車 icon から <code class="highlighter-rouge">Duplicate Profile</code> を選択、任意の名前を付ける。</li>
+  <li>名前を付けた profile が選択された状態で <code class="highlighter-rouge">Default</code> button を tap 。</li>
+  <li>同じく profile が選択された状態のまま各 tab で以下を設定。
+    <ul>
+      <li>
+<code class="highlighter-rouge">Text</code>
+        <ul>
+          <li>
+<code class="highlighter-rouge">Background</code> の <code class="highlighter-rouge">Color &amp; Effects</code> を tap して <code class="highlighter-rouge">Opacity</code> を 100% に。</li>
+          <li>check <code class="highlighter-rouge">Antialias text</code>
+</li>
+          <li>uncheck <code class="highlighter-rouge">Use fold fonts</code>
+</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">Window</code>
+        <ul>
+          <li>
+<code class="highlighter-rouge">Window Size</code> を任意に。MacBook Pro (16-inch, 2019) だと 100 x 76 とか。</li>
+          <li>
+<code class="highlighter-rouge">Scrollback</code> で <code class="highlighter-rouge">Limit number of rows to</code> を check して値を 0 に設定。</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">Shell</code>
+        <ul>
+          <li>
+<code class="highlighter-rouge">Run command</code> を check して内容を <code class="highlighter-rouge">/usr/local/bin/tmux -u</code> に。参考: <a href="https://www.wazalab.com/2018/09/10/tmux%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AB%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%81%8C%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%8D%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9/" title="Waza Lab - www.wazalab.com">tmux使用時に日本語が表示されないとき(アンダースコアになってしまう）の対処法</a>
+            <ul>
+              <li>GNU Screen の場合は同様に内容を <code class="highlighter-rouge">/usr/local/bin/screen -U -O -s /usr/local/bin/zsh</code> に。</li>
+            </ul>
+          </li>
+          <li>
+<code class="highlighter-rouge">When the shell exits</code> を <code class="highlighter-rouge">Close if the shell exited cleanly</code> に変更。</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">Keyboard</code>
+        <ul>
+          <li>check <code class="highlighter-rouge">Use Option as Meta key</code>
+</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">Advanced</code>
+        <ul>
+          <li>check <code class="highlighter-rouge">Delete sends Control-H</code>
+            <ul>
+              <li>何故これをしているのか覚えていない。MacBook の keyboard を使っている限りは関係ないかも。</li>
+            </ul>
+          </li>
+          <li>uncheck <code class="highlighter-rouge">Audible bell</code>
+</li>
+          <li>uncheck <code class="highlighter-rouge">Set locale environment variables on startup</code>
+            <ul>
+              <li>何故こうしたのか確かな記憶がないが、たぶんこの辺は全部 .zshrc や .tmux.conf (あるいは .screenrc) で制御したかったんじゃないかな。</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">Preferences</code> の <code class="highlighter-rouge">General</code> の <code class="highlighter-rouge">On startup, open</code> において <code class="highlighter-rouge">New window with profile</code> が check され、上記で作成した profile が選択されていることを確認。</li>
+</ul>
+
+<h3 id="change-the-path-of-screen-capture-saved">Change the path of Screen Capture saved</h3>
+<p>以下は Screen Capture 画像の保存先を <code class="highlighter-rouge">~/Pictures/ss</code> にしたい場合。どこでも良いけど Desktop は有り得ない。</p>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> ~/Pictures/ss/
+<span class="gp">$</span><span class="w"> </span>defaults write com.apple.screencapture location ~/Pictures/ss/ <span class="o">&amp;&amp;</span> killall SystemUIServer</code></pre></figure>
+
+<h3 id="visual-studio-code"><a href="https://code.visualstudio.com">Visual Studio Code</a></h3>
+<ul>
+  <li>download して install 。</li>
+  <li>既存の設定をどこからから持ってきて、</li>
+</ul>
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">mv</span> <span class="nt">-i</span> ~/Library/Application<span class="se">\ </span>Support/Code/User ~/Library/Application<span class="se">\ </span>Support/Code/User.bak <span class="c"># backup</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">ln</span> <span class="nt">-s</span> ~/dotfiles/vscode ~/Library/Application<span class="se">\ </span>Support/Code/User</code></pre></figure>
+
+<ul>
+  <li>command line から起動出来るようにする
+    <ul>
+      <li><a href="https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line">Launching from the command line</a></li>
+      <li>path の設定は前述の Dotfiles 内の .zshrc には入れてある。</li>
+    </ul>
+  </li>
+  <li>参考
+    <ul>
+      <li><a href="https://qiita.com/mottox2/items/581869563ce5f427b5f6">Visual Studio Codeで設定ファイル・キーバインディング・拡張機能を共有する</a></li>
+      <li><a href="https://qiita.com/canpok1/items/a7c4c96e3c1c2a1cc532">どこでも同じ設定でVisualStudioCodeを使う方法</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="create-case-sensitive-volume">Create case-sensitive volume</h3>
+<p>file 名の大文字小文字を区別する領域は持っておきたい。Linux 等 default の file system が case-sensitive な環境から持ってきた tar を展開したくなったりすることがあるので。</p>
+<h4 id="volume-を作って-mount">volume を作って mount</h4>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>hdiutil create <span class="nt">-size</span> 50g <span class="nt">-fs</span> <span class="s2">"Case-sensitive APFS"</span> <span class="nt">-type</span> SPARSEBUNDLE <span class="nt">-volname</span> <span class="s2">"dev"</span> dev.sparsebundle
+<span class="gp">$</span><span class="w"> </span><span class="c"># volume が mount 可能であることを確認。</span>
+<span class="gp">$</span><span class="w"> </span>hdiutil attach dev.sparsebundle
+<span class="gp">$</span><span class="w"> </span><span class="nb">ln</span> <span class="nt">-s</span> /Volumes/dev ~/dev</code></pre></figure>
+
+<h4 id="作成した-volume-を-mount-するための-script-を用意">作成した volume を mount するための script を用意</h4>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/bin
+<span class="gp">$</span><span class="w"> </span>vi ~/bin/mount_dev.sh
+<span class="gp">$</span><span class="w"> </span><span class="nb">cat</span> ~/bin/mount_dev.sh
+<span class="gp">#</span><span class="o">!</span>/bin/bash
+<span class="go">
+IMAGE="/Users/m4c/dev.sparsebundle"
+</span><span class="gp">if [ -d "$</span><span class="o">{</span>IMAGE<span class="o">}</span><span class="s2">" ]; then
+</span><span class="gp">    /usr/bin/hdiutil attach "$</span><span class="s2">{IMAGE}"</span>
+<span class="go">else
+</span><span class="gp">    echo "image '$</span><span class="o">{</span>IMAGE<span class="o">}</span><span class="s1">' is NOT exists."
+</span><span class="go">fi
+</span><span class="gp">$</span><span class="w"> </span><span class="nb">chmod </span>700 ~/bin/mount_dev.sh</code></pre></figure>
+
+<h4 id="mac-への-login-時に上記-script-を自動的に呼び出すための準備">mac への login 時に、上記 script を自動的に呼び出すための準備</h4>
+<ul>
+  <li>参考
+    <ul>
+      <li><a href="https://dev.classmethod.jp/tool/mac-launch-agents/">[Mac] ユーザログイン時にスクリプトを実行する方法</a></li>
+      <li><a href="https://qiita.com/rsahara/items/7d37a4cb6c73329d4683">launchdで定期的にスクリプトを実行</a></li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>vi ~/Library/LaunchAgents/space.cloudeleven.m4c.mount_dev.plist
+<span class="gp">$</span><span class="w"> </span><span class="nb">cat</span> ~/Library/LaunchAgents/space.cloudeleven.m4c.mount_dev.plist
+<span class="gp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><span class="w">
+</span><span class="gp">&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;</span><span class="w">
+</span><span class="gp">&lt;plist version="1.0"&gt;</span><span class="w">
+</span><span class="gp">  &lt;dict&gt;</span><span class="w">
+</span><span class="gp">    &lt;key&gt;</span>Label&lt;/key&gt;
+<span class="gp">    &lt;string&gt;</span>space.cloudeleven.m4c.mount_dev&lt;/string&gt;
+<span class="gp">    &lt;key&gt;</span>ProgramArguments&lt;/key&gt;
+<span class="gp">    &lt;array&gt;</span><span class="w">
+</span><span class="gp">      &lt;string&gt;</span>/bin/bash&lt;/string&gt;
+<span class="gp">      &lt;string&gt;</span>/Users/m4c/bin/mount_dev.sh&lt;/string&gt;
+<span class="gp">    &lt;/array&gt;</span><span class="w">
+</span><span class="gp">    &lt;key&gt;</span>RunAtLoad&lt;/key&gt;
+<span class="gp">    &lt;true/&gt;</span><span class="w">
+</span><span class="gp">  &lt;/dict&gt;</span><span class="w">
+</span><span class="gp">&lt;/plist&gt;</span><span class="w">
+</span><span class="gp">$</span><span class="w"> </span><span class="c"># lint</span>
+<span class="gp">$</span><span class="w"> </span>plutil <span class="nt">-lint</span> ~/Library/LaunchAgents/space.cloudeleven.m4c.mount_dev.plist
+<span class="gp">$</span><span class="w"> </span><span class="c"># 一旦 unmount して、</span>
+<span class="gp">$</span><span class="w"> </span>hdiutil detach /Volumes/dev
+<span class="gp">$</span><span class="w"> </span><span class="c"># plist の内容で mount 出来ることを確認</span>
+<span class="gp">$</span><span class="w"> </span>launchctl load ~/Library/LaunchAgents/space.cloudeleven.m4c.mount_dev.plist
+<span class="gp">$</span><span class="w"> </span><span class="c"># もしやり直す必要がある場合は一旦 unload する</span>
+<span class="gp">$</span><span class="w"> </span>launchctl unload ~/Library/LaunchAgents/space.cloudeleven.m4c.mount_dev.plist</code></pre></figure>
+
+<h3 id="git">git</h3>
+<ul>
+  <li>git status などで日本語を含む file 名が読める形で表示されるように。開発だと基本的に日本語名の file なんて作らないけど、text file はとりあえず何でも git に放り込んだりしているので。
+    <ul>
+      <li>参考: <a href="https://dev.classmethod.jp/tool/git/git-avoid-illegal-charactor-tips/">[小ネタ][git] 日本語ファイルの文字化けを回避する</a>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>git config <span class="nt">--global</span> core.quotepath <span class="nb">false</span></code></pre></figure>
+
+<ul>
+  <li>github で使う名前を global に設定しておく。
+    <ul>
+      <li>github に限らず git 全体に影響する設定だけど、うっかり push して恥をかくのは github であることが多いので、github に push されても恥ずかしくない設定を git の global に設定してしまう。ま、mail address は隠蔽されるように github 側で設定すると思うんだけど。</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>git config <span class="nt">--global</span> user.name <span class="s2">"任意の user name"</span>
+<span class="gp">$</span><span class="w"> </span>git config <span class="nt">--global</span> user.email <span class="s2">"任意の mail address"</span></code></pre></figure>
+
+<ul>
+  <li>必要な repository を clone
+    <ul>
+      <li>github や bitbucket, 自宅の network などから必要そうな repository を clone しておく。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="anyenv">anyenv</h3>
+
+<p>**env 系は全部 anyenv のお世話になる。</p>
+
+<h4 id="install-anyenv">install anyenv</h4>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>git clone https://github.com/anyenv/anyenv ~/.anyenv
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'export PATH="$HOME/.anyenv/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'eval "$(anyenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.zshrc
+<span class="gp">$</span><span class="w"> </span><span class="nb">exec</span> <span class="nv">$SHELL</span> <span class="nt">-l</span> <span class="c"># ここで warning が出るので次で対応する</span>
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install</span> <span class="nt">--init</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># update に便利な plugin も入れてしまう。</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">mkdir</span> <span class="nt">-p</span> ~/.anyenv/plugins
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/znz/anyenv-update.git ~/.anyenv/plugins/anyenv-update
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/znz/anyenv-git.git ~/.anyenv/plugins/anyenv-git
+<span class="gp">$</span><span class="w"> </span><span class="c"># update してみる</span>
+<span class="gp">$</span><span class="w"> </span>anyenv update
+<span class="gp">$</span><span class="w"> </span>anyenv git pull</code></pre></figure>
+
+<h4 id="install-rbenv-pyenv-nodenv-jenv">install rbenv, pyenv, nodenv, jenv</h4>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install</span> <span class="nt">-l</span> <span class="c"># install 可能な **env を確認</span>
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install </span>rbenv
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install </span>pyenv
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install </span>nodenv
+<span class="gp">$</span><span class="w"> </span>anyenv <span class="nb">install </span>jenv
+<span class="gp">$</span><span class="w"> </span><span class="nb">exec</span> <span class="nv">$SHELL</span> <span class="nt">-l</span>
+<span class="gp">$</span><span class="w"> </span>anyenv versions <span class="c"># 確認</span>
+<span class="gp">$</span><span class="w"> </span><span class="c"># rbenv で `bundle exec` を省略出来るように</span>
+<span class="gp">$</span><span class="w"> </span>git clone https://github.com/ianheggie/rbenv-binstubs.git <span class="s2">"</span><span class="si">$(</span>rbenv root<span class="si">)</span><span class="s2">/plugins/rbenv-binstubs"</span></code></pre></figure>
+
+<ul>
+  <li>参考: <a href="https://github.com/ianheggie/rbenv-binstubs">ianheggie/rbenv-binstubs</a>
+</li>
+</ul>
+
+<h3 id="witch">Witch</h3>
+<p>基本的には <code class="highlighter-rouge">⌥+Tab</code> で (application ではなく) window を切り替えるための tool 。</p>
+
+<p>Microsoft Windows での <code class="highlighter-rouge">Alt+Tab</code> に近い操作感になるのだけど、それだけじゃなく、window 内の各 tab を直接 active にしたり、application/window/tab 名を入力しながら incremental に active 化する対象を絞り込むことも可能。Spaces を跨いでいる window にも一発で focus 出来るので便利。というかこれが普通であるべき。</p>
+
+<p>例えば、四本指 swipe で Spaces を切り替えて、⌘+Tab で application を切り替えて、⌥+` で window を切り替えて… とかやってられなくない?</p>
+
+<p>mac に乗り換えてかなり経つけど、application/window の切り替えだけはどう考えても Windows の方がまとも。とは言え Witch のおかげでやっぱり Mac の方が便利ということになるのだけど。</p>
+
+<ul>
+  <li>Many Tricks の <a href="https://manytricks.com/witch/" title="Witch - Many Tricks">Witch</a> の page から download して install 。必要に応じて license を購入。</li>
+  <li>起動すると色々権限を要求されるので与えてやる。具体的には以下の項目に check が入った状態になれば良いはず。
+    <ul>
+      <li>
+<code class="highlighter-rouge">System Preferences</code> &gt; <code class="highlighter-rouge">Security &amp; Privacy</code> &gt; <code class="highlighter-rouge">Privacy</code> &gt;
+        <ul>
+          <li>
+<code class="highlighter-rouge">Accessibility</code> が選択された状態で <code class="highlighter-rouge">Allow the apps below to control your computer.</code> 内の
+            <ul>
+              <li><code class="highlighter-rouge">witchdaemon.app</code></li>
+            </ul>
+          </li>
+          <li>
+<code class="highlighter-rouge">Screen Recording</code> が選択された状態での
+            <ul>
+              <li><code class="highlighter-rouge">witchdaemon.app</code></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="android-studio"><a href="https://developer.android.com/studio?hl=ja">Android Studio</a></h3>
+<p>これも端末の用途によっては必須ではないのだけど、mac に Android 端末を繋ぎたくなる時はいずれ訪れるし、その時に <code class="highlighter-rouge">adb</code> 等の commands が使えると便利なので、storage 容量がよほど逼迫しているのでなければ入れてしまう。</p>
+<ul>
+  <li>既存の別端末にて menu <code class="highlighter-rouge">File</code> &gt; <code class="highlighter-rouge">Export Settings...</code> したものを新端末で <code class="highlighter-rouge">Import Settings...</code> する。
+    <ul>
+      <li>たぶん Keymap しか変えていない。^H で backspace 出来ないと死ぬほど苛つくので死なないように変更したり、AquaSKK で使う ^J に割り当てられている機能を別の key bind に変えたり。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">SDK Manager</code> を立ち上げて <code class="highlighter-rouge">SDK Tools</code> で必要そうな項目を check して install しておく。例えば次の項目とか。
+    <ul>
+      <li>Android Emulator</li>
+      <li>Google Play Instant Development SDK</li>
+      <li>Google Play services</li>
+    </ul>
+  </li>
+  <li>Emulator を使う場合は <code class="highlighter-rouge">ADV Manager</code> で virtual device を作っておく。
+    <ul>
+      <li>これは完全に備忘録だけど、emulator を立ち上げる command 。自宅以外では問題ない気もするけど virtual device が network に繋がらなくて毎回はまるので。
+        <ul>
+          <li>local の DNS を使いたい場合は <code class="highlighter-rouge">8.8.8.8</code> の部分を適当に変えて。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span>~/Library/Android/sdk/emulator/emulator <span class="nt">-avd</span> Nexus_5X_API_28 <span class="nt">-dns-server</span> 8.8.8.8</code></pre></figure>
+
+<ul>
+  <li>前述の case-sensitive な領域にある project を開くと表示される警告に対応する。
+    <ul>
+      <li>参考: <a href="https://confluence.jetbrains.com/display/IDEADEV/Filesystem+Case-Sensitivity+Mismatch">Filesystem Case-Sensitivity Mismatch</a>
+</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-shell_session" data-lang="shell_session"><span class="gp">$</span><span class="w"> </span><span class="c"># 一応既存の設定を確認</span>
+<span class="gp">$</span><span class="w"> </span><span class="nb">cat</span> /Applications/Android<span class="se">\ </span>Studio.app/Contents/bin/idea.properties
+<span class="gp">$</span><span class="w"> </span><span class="nb">echo</span> <span class="s1">'idea.case.sensitive.fs=true'</span> <span class="o">&gt;&gt;</span> /Applications/Android<span class="se">\ </span>Studio.app/Contents/bin/idea.properties</code></pre></figure>
+
+<h2 id="other-settings">Other Settings</h2>
+
+<p>端末の用途によって必要だったり不必要だったりする設定。個人的 memo 色強め。</p>
+
+<h3 id="docker-desktop-for-mac"><a href="https://docs.docker.com/docker-for-mac/">Docker Desktop for Mac</a></h3>
+<ul>
+  <li>document に従って install するだけ。昔は docker-compose を別途 install する必要があった気がするけど、今は全部含まれてるし。</li>
+</ul>
+
+<h3 id="virtualbox"><a href="https://www.virtualbox.org/">VirtualBox</a></h3>
+<ul>
+  <li>本体を install して、Extension Pack を install 。</li>
+</ul>
+
+<h3 id="adobe-creative-cloud"><a href="https://creativecloud.adobe.com/">Adobe Creative Cloud</a></h3>
+<ul>
+  <li>Creative Cloud Installer を download して install 。</li>
+</ul>
+
+<h3 id="media-related">Media related</h3>
+
+<h4 id="vlc-media-player"><a href="https://www.videolan.org/">VLC media player</a></h4>
+<p>動画・音声、何でもお気軽再生用。</p>
+
+<h4 id="handbrake"><a href="https://handbrake.fr/">HandBrake</a></h4>
+<p>動画のお気軽 encode 用。</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">Preferences...</code> &gt; <code class="highlighter-rouge">General</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">At Launch</code>
+        <ul>
+          <li>uncheck <code class="highlighter-rouge">Show Open Source panel</code>
+</li>
+        </ul>
+      </li>
+      <li>
+<code class="highlighter-rouge">When Done</code>
+        <ul>
+          <li>select <code class="highlighter-rouge">Do Nothing</code>
+</li>
+          <li>uncheck <code class="highlighter-rouge">Play System Alert Sound</code>
+</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>menu <code class="highlighter-rouge">View</code> &gt; <code class="highlighter-rouge">Customize Toolbar...</code> で <code class="highlighter-rouge">Add Titles To Queue</code> を toolbar に追加。
+    <ul>
+      <li>これの存在を知るまで file をひとつひとつ add していた…。</li>
+    </ul>
+  </li>
+  <li>自分で調整したお気に入りの preset があるなら、別の端末でそれを export して、新端末で import 。
+    <ul>
+      <li>HandBrake はいつからか audio track の扱いの設定が変わったのか、(古い version から preset を持ってきた場合のみ?) audio track を読み込んでくれない場合があるので、自分で作った preset を使う場合は preset の <code class="highlighter-rouge">Audio</code> tab の <code class="highlighter-rouge">Selection Behavior...</code> button から適当に set する。
+        <ul>
+          <li>
+<code class="highlighter-rouge">Track Selection Behavior</code> を <code class="highlighter-rouge">All Matching Selected Languages</code> に。</li>
+          <li>
+<code class="highlighter-rouge">Languages</code> では <code class="highlighter-rouge">Show All</code> button を押して全選択肢を表示させ <code class="highlighter-rouge">Any</code> のみが check されている状態にする。</li>
+          <li>
+<code class="highlighter-rouge">Audio encoder settings for each selected track</code> では <code class="highlighter-rouge">Mixdown</code> を <code class="highlighter-rouge">Stereo</code> に変更しておく。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="optical-disc-related">Optical Disc related</h3>
+<p>光学 disc drive を繋ぐ予定がある端末の場合。</p>
+
+<h4 id="x-lossless-decoder"><a href="https://tmkk.undo.jp/xld/">X Lossless Decoder</a></h4>
+<p>CD ripping 用。基本的に 1 枚の CD を 1 file の flac に書き出すために使っている。</p>
+<h5 id="preferences--2">Preferences &gt;</h5>
+<ul>
+  <li>
+<code class="highlighter-rouge">General</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">Output format</code> を <code class="highlighter-rouge">FLAC</code> に。</li>
+      <li>
+<code class="highlighter-rouge">Output directory</code> で <code class="highlighter-rouge">Specify</code> を選択。path は必要に応じて任意のものに変更。</li>
+      <li>
+<code class="highlighter-rouge">Character encoding of cuesheet</code> を <code class="highlighter-rouge">Unicode (UTF-8)</code> に。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">File Naming</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">Format of filename</code> で <code class="highlighter-rouge">Custom</code> を選択し、値を <code class="highlighter-rouge">%A - %T</code> に。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">CDDB</code>
+    <ul>
+      <li>
+<code class="highlighter-rouge">FreeDB</code> の <code class="highlighter-rouge">Server</code> を <code class="highlighter-rouge">freedbtest.dyndns.org</code> に変更。
+        <ul>
+          <li>これ、確か本家の <a href="http://www.freedb.org/">freedb.org</a> は日本語に対応していなかったからこの設定にしていたのだけど、本家は 2020/03/31 で shut down するらしい。<a href="https://freedbtest.dyndns.org/">freedbtest.dyndns.org/</a> がますますありがたい。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="makemkv"><a href="https://www.makemkv.com/">MakeMKV</a></h4>
+<p>Blu-ray や DVD の内容を無劣化に抽出して mkv として保存するための tool 。</p>
+
+<p>日本では暗号化されたものを抽出したり保存したりしてはいけません。</p>
+
+<h4 id="allow-handbrake-to-read-dvd">Allow HandBrake to read DVD</h4>
+<p>現状の日本では駄目なんだけど、法が変わったり合法な国に移住するなど条件が整った場合、<code class="highlighter-rouge">brew install libdvdcss</code> して HandBrake を再起動すれば良いらしい。</p>
+
+<p>昔、まだ日本でも合法だったころは libdvdcss を自分で探して download してきて、自分でどこかに配置した記憶があるが今時は便利な模様。</p>
+
+<h4 id="never-let-disc-play-automatically">Never Let Disc Play Automatically</h4>
+<p>光学 media を挿入すると自動的に再生されるのがうざいので止める。</p>
+
+<p>以下の <code class="highlighter-rouge">CDs &amp; DVDs</code> はもしかすると光学 disc drive を繋がないと表示されないかも知れない。</p>
+<h5 id="system-preferences--cds--dvds">System Preferences &gt; CDs &amp; DVDs</h5>
+<ul>
+  <li>
+<code class="highlighter-rouge">When you insert a blank</code> から始まる 3 つはすべて <code class="highlighter-rouge">Ignore</code> に変更</li>
+  <li>
+<code class="highlighter-rouge">When you insert a music CD</code> は <code class="highlighter-rouge">Open other application...</code> から上記で install した <code class="highlighter-rouge">Open XLD.app</code> を set 。
+    <ul>
+      <li>CD はこのためにしか使わないので。</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">When you insert a video DVD</code> は最初から <code class="highlighter-rouge">Ignore</code> になってるけど、それでも DVD を入れたら勝手に DVD Player が起動してしまっていたので、一度 <code class="highlighter-rouge">Open DVD Player</code> に変更した後で再度 <code class="highlighter-rouge">Ignore</code> に変更したら、DVD を挿入しても DVD Player が立ち上がらなくなった。気がする。再現性があるかどうかは判らない。</li>
+</ul>
+
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=128+settings+required+minimumly+to+start+using+a+new+mac.%20-%20https://regrets.cloudeleven.space/posts/2020/01/20/mac-settings%20by%20@_cloudeleven_" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"></path></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://regrets.cloudeleven.space/posts/2020/01/20/mac-settings" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewbox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"></path></svg>
+            </a>
+          </div>
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://regrets.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    © 2019 cloudeleven.
+    Powered by
+    <a href="https://jekyllrb.com/" rel="noreferrer noopener" target="_blank" title="Jekyll">Jekyll</a> and <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Chalk">Chalk</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127518451-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-127518451-1');
+  </script>
+
+
+<script src="/assets/vendor-db4849b0b1aeccd6576d817237ae4253c5a5a5f97877f879f2552ec9a6697775.js" type="text/javascript" integrity="sha256-20hJsLGuzNZXbYFyN65CU8Wlpfl4d/h58lUuyaZpd3U=" crossorigin="anonymous"></script>
+
+
+  <script src="/assets/webfonts-cd7eae67265bcd101d0f598456b16171b2533d714dcc3a5b6ddacfdf234c4cbc.js" type="text/javascript" integrity="sha256-zX6uZyZbzRAdD1mEVrFhcbJTPXFNzDpbbdrP3yNMTLw=" crossorigin="anonymous"></script>
+
+
+
+  <script src="/assets/scrollappear-7691f37e9154c7d53f7515a518dbb0faf3a73d9b3d5b75522867a134952d0a76.js" type="text/javascript" integrity="sha256-dpHzfpFUx9U/dRWlGNuw+vOnPZs9W3VSKGehNJUtCnY=" crossorigin="anonymous"></script>
+
+
+<script src="/assets/application-7b6260deb98e64a8a42b97f5c18ad2a8c9507d70f9a097a440b354770f979dc7.js" type="text/javascript" integrity="sha256-e2Jg3rmOZKikK5f1wYrSqMlQfXD5oJekQLNUdw+Xncc=" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
